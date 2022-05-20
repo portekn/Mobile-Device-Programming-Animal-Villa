@@ -89,12 +89,15 @@ You have just moved into the town of Animal Villa! Introductions can be hard, bu
 #### Examples:
 1. Turn On/Off background music
    - Given the ability to adjust the volume to a higher or lower setting
+   - When a player wants to adjust the volume
    - The player can easily access the music settings
 2. Turn On/Off sound effects
    - Given the ability to adjust the volume to a higher or lower setting
+   - When the player wants to adjust the volume
    - The player can easily access the sound effect settings
 3. Change the text speed 
    - Given the ability to adjust the text speed of the incoming prompts
+   - When a player is having difficulties reading the prompt 
    - The player can easily access the text speed settings
 
 
