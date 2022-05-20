@@ -63,5 +63,8 @@ When I OPEN SETTINGS
 Then I AM ABLE TO CHANGE THE VOLUME
 
 ## Class Diagram
-## Story Board
+![Class Diagram](https://github.com/portekn/Mobile-Device-Programming-Animal-Villa/blob/73444f57bbc2ccc11019ab19554065e46bbda7d6/Images/AnimalVilla_ClassDiagram.drawio.png)
 
+## Story Board
+![Story Board Gameplay](https://github.com/portekn/Mobile-Device-Programming-Animal-Villa/blob/73444f57bbc2ccc11019ab19554065e46bbda7d6/Images/storyboard%20idea.PNG)
+![Story Board Title](https://github.com/portekn/Mobile-Device-Programming-Animal-Villa/blob/73444f57bbc2ccc11019ab19554065e46bbda7d6/Images/storyboard%20title.PNG)
