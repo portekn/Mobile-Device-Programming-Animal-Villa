@@ -104,6 +104,16 @@ You have just moved into the town of Animal Villa! Introductions can be hard, bu
 ## Class Diagram
 ![Class Diagram](https://github.com/portekn/Mobile-Device-Programming-Animal-Villa/blob/73444f57bbc2ccc11019ab19554065e46bbda7d6/Images/AnimalVilla_ClassDiagram.drawio.png)
 
+## Class Diagram Descriptions:
+**Title:** The first screen the user sees. This is the title screen for the game.
+**MainActivity:** This will host the actual game and the screen the user will interact most with.
+**Choice 1:** One of two choices the player can make. Affects the storyline to a directed ending.
+**Choice 2:**  One of two choices the player can make. Affects the storyline to a directed ending.
+**Saving:** The automatic saving for the game.
+**IheartAffectDAO:** Interface for the heart interaction choices for the story.
+**IchaosAffectDAO:** Interface for the chaos (negative) interaction choices for the story.
+**ImoneyAffectDAO:** Interface for the money interaction choices for the story.
+
 ## Story Board
 ![Story Board Gameplay](https://github.com/portekn/Mobile-Device-Programming-Animal-Villa/blob/73444f57bbc2ccc11019ab19554065e46bbda7d6/Images/storyboard%20idea.PNG)
 ![Story Board Title](https://github.com/portekn/Mobile-Device-Programming-Animal-Villa/blob/73444f57bbc2ccc11019ab19554065e46bbda7d6/Images/storyboard%20title.PNG)
