@@ -13,24 +13,26 @@
 - Integration Developer: Jake Plagge, Chloe(Cass) Motz
 
 ## Meeting Schedule :
+- Wednesdays @ 6:00 PM via Microsoft Teams
+- Sundays @ Any Time via Microsoft Teams (As Needed)
 
 | Week | Topic | Elizabeth | Cass | Jake | Kelli |
 | --- | --- | --- | --- | --- | --- |
-| 1 | info | info | info | info | info |
-| 2 | info | info | info | info | info |
-| 3 | info | info | info | info | info |
-| 4 | info | info | info | info | info |
-| 5 | info | info | info | info | info |
-| 6 | info | info | info | info | info |
-| 7 | info | info | info | info | info |
-| 8 | info | info | info | info | info |
-| 9 | info | info | info | info | info |
-| 10 | info | info | info | info | info |
-| 11 | info | info | info | info | info |
-| 12 | info | info | info | info | info |
-| 13 | info | info | info | info | info |
-| 14 | info | info | info | info | info |
-| 15 | info | info | info | info | info |
+| 1 (5/11/22) | Sprint 0 Start | --- | --- | --- | --- |
+| 2 (5/18/22) | Forming Groups/Design Doc | Attended | Attended | Attended | Attended |
+| 3 (5/25/22)| Sprint 1 Start | --- | --- | --- | --- |
+| 4 (6/1/22)| info | --- | --- | --- | --- |
+| 5 (6/8/22)| info | --- | --- | --- | --- |
+| 6 (6/15/22)| info | --- | --- | --- | --- |
+| 7 (6/22/22)| Sprint 2 Start | --- | --- | --- | --- |
+| 8 (6/29/22)| info | --- | --- | --- | --- |
+| 9 (7/6/22) | info | --- | --- | --- | --- |
+| 10 (7/13/22) | info | --- | --- | --- | --- |
+| 11 (7/20/22) | Sprint 3 Start | --- | --- | --- | --- |
+| 12 (7/27/22) | info | --- | --- | --- | --- |
+| 13 (8/3/22) | info | --- | --- | --- | --- |
+| 14 (8/10/22) | info | --- | --- | --- | --- |
+| 15 (8/17/22) | info | --- | --- | --- | --- |
 
 ## Introduction :
 You have just moved into the town of Animal Villa! Introductions can be hard, but your neighbors seem friendly. Choose how you interact with your fellow animal friends and make meaningful relationships! Beware of creating a bad reputation for yourself, and make sure to keep track of your finances. There are a lot of new faces to see, places to visit, and connections to be made!
