@@ -41,12 +41,20 @@ You have just moved into the town of Animal Villa! Introductions can be hard, bu
 ## Functional Requirements :
 ### Requirement 1 - Navigating and Making Choices :
 #### Senario :
-As a player, I want to be able to swipe left and right to make quick and easy decisions
+- As a player, I want to be able to swipe left and right to make quick and easy decisions
+
+#### Dependencies :
+- Navigation and choice making will be smooth and consistant
+- Choices will have a YES or NO responce
+
+#### Assumptions : 
+- Players will be presented with two choices
 
 #### Examples :
-Given SCENARIO/PROMPT/CHOICE
-When A CHARACTER ASKS FOR HELP
-Then I CAN CHOOSE HOW I WANT TO INTERACT WITH THEM
+1. Making Choices
+   - Given two choices on the screen
+   - When a player wants to make a choice
+   - The player will swipe left for NO and right for YES
 
 ### Requirement 2 :
 As a PLAYER I want TO BE ABLE TO SAVE MY PROGRESS 
