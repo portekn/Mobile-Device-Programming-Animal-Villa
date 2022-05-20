@@ -1,11 +1,16 @@
 # Animal Villa
 ## Design Document
 
-### Contributors :
+## Contributors :
 - Elizabeth Bissinger
 - Chloe(Cass) Motz
 - Jake Plagge
 - Kelli Porter
+
+## Scrum Roles :
+- DevOps/Product Owner/Scrum Master: Kelli Porter
+- Frontend Developer: Elizabeth 
+- Integration Developer: Jake, Chloe
 
 ## Meeting Schedule
 
