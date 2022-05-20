@@ -106,12 +106,19 @@ You have just moved into the town of Animal Villa! Introductions can be hard, bu
 
 ## Class Diagram Descriptions:
 **Title:** The first screen the user sees. This is the title screen for the game.
+
 **MainActivity:** This will host the actual game and the screen the user will interact most with.
+
 **Choice 1:** One of two choices the player can make. Affects the storyline to a directed ending.
+
 **Choice 2:**  One of two choices the player can make. Affects the storyline to a directed ending.
+
 **Saving:** The automatic saving for the game.
+
 **IheartAffectDAO:** Interface for the heart interaction choices for the story.
+
 **IchaosAffectDAO:** Interface for the chaos (negative) interaction choices for the story.
+
 **ImoneyAffectDAO:** Interface for the money interaction choices for the story.
 
 ## Story Board
