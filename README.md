@@ -40,7 +40,7 @@ You have just moved into the town of Animal Villa! Introductions can be hard, bu
 
 ## Functional Requirements :
 ### Requirement 1 - Navigating and Making Choices :
-#### Senario :
+#### Scenario :
 - As a player, I want to be able to swipe left and right to make quick and easy decisions
 
 #### Dependencies :
@@ -56,16 +56,26 @@ You have just moved into the town of Animal Villa! Introductions can be hard, bu
    - When a player wants to make a choice
    - The player will swipe left for NO and right for YES
 
-### Requirement 2 :
-As a PLAYER I want TO BE ABLE TO SAVE MY PROGRESS 
-So that I can STOP PLAYING MY GAME WHEN I WANT TO/NOT LOSE PROGRESS
-Given I PLAYED THIS GAME FOR A BIT
-When I EXIT THE GAME/ CLOSE THE APPF
-Then MY GAME PROGRESS IS SAVED
+### Requirement 2 - Saving Your Progress :
+#### Scenario :
+- As a player, I want to be able to save my progress
+
+#### Dependencies :
+- Saving progress will be automatic
+- The game should save to the app or to a signed in account
+
+#### Assumptions : 
+- The player does not get to create a manual save
+
+#### Examples :
+1. Closing the App
+   - Given the player wants to quit the game
+   - When a player closes the applicaiton
+   - The player's progress will be stored in the application or in an online cloud
 
 ### Requirement 3 - Changing Settings :
-#### Scenario: 
--As a player, I want to be able to change the settings of the game
+#### Scenario : 
+- As a player, I want to be able to change the settings of the game
 
 #### Dependencies:
 - Adjusting the volume of the game
@@ -74,7 +84,7 @@ Then MY GAME PROGRESS IS SAVED
 #### Assumptions:
 - The background music is too loud/soft
 - The sound effects are too soft
-- The text spped is too slow/fast
+- The text speed is too slow/fast
 
 #### Examples:
 1. Turn On/Off background music
@@ -86,6 +96,8 @@ Then MY GAME PROGRESS IS SAVED
 3. Change the text speed 
    - Given the ability to adjust the text speed of the incoming prompts
    - The player can easily access the text speed settings
+
+
 ## Class Diagram
 ![Class Diagram](https://github.com/portekn/Mobile-Device-Programming-Animal-Villa/blob/73444f57bbc2ccc11019ab19554065e46bbda7d6/Images/AnimalVilla_ClassDiagram.drawio.png)
 
