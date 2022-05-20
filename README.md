@@ -83,7 +83,7 @@ Then MY GAME PROGRESS IS SAVED
 2. Turn On/Off sound effects
    - Given the ability to adjust the volume to a higher or lower setting
    - The player can easily access the sound effect settings
-3.Chnage the text speed 
+3. Change the text speed 
    - Given the ability to adjust the text speed of the incoming prompts
    - The player can easily access the text speed settings
 ## Class Diagram
