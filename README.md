@@ -63,13 +63,29 @@ Given I PLAYED THIS GAME FOR A BIT
 When I EXIT THE GAME/ CLOSE THE APPF
 Then MY GAME PROGRESS IS SAVED
 
-### Requirement 3 :
-As a PLAYER I want TO BE ABLE TO CHANGE SETTINGS
-So that I can BE COMFORTABLE WHILE PLAYING MY GAME
-Given THE MUSIC IS TOO LOUD
-When I OPEN SETTINGS
-Then I AM ABLE TO CHANGE THE VOLUME
+### Requirement 3 - Changing Settings :
+#### Scenario: 
+-As a player, I want to be able to change the settings of the game
 
+#### Dependencies:
+- Adjusting the volume of the game
+- Changing text speed
+
+#### Assumptions:
+- The background music is too loud/soft
+- The sound effects are too soft
+- The text spped is too slow/fast
+
+#### Examples:
+1. Turn On/Off background music
+   - Given the ability to adjust the volume to a higher or lower setting
+   - The player can easily access the music settings
+2. Turn On/Off sound effects
+   - Given the ability to adjust the volume to a higher or lower setting
+   - The player can easily access the sound effect settings
+3.Chnage the text speed 
+   - Given the ability to adjust the text speed of the incoming prompts
+   - The player can easily access the text speed settings
 ## Class Diagram
 ![Class Diagram](https://github.com/portekn/Mobile-Device-Programming-Animal-Villa/blob/73444f57bbc2ccc11019ab19554065e46bbda7d6/Images/AnimalVilla_ClassDiagram.drawio.png)
 
