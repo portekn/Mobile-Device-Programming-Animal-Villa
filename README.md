@@ -9,8 +9,8 @@
 
 ## Scrum Roles :
 - DevOps/Product Owner/Scrum Master: Kelli Porter
-- Frontend Developer: Elizabeth 
-- Integration Developer: Jake, Chloe
+- Frontend Developer: Elizabeth Bissinger
+- Integration Developer: Jake Plagge, Chloe(Cass) Motz
 
 ## Meeting Schedule :
 
