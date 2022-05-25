@@ -20,8 +20,8 @@
 | --- | --- | --- | --- | --- | --- |
 | 1 (5/11/22) | Sprint 0 Start | --- | --- | --- | --- |
 | 2 (5/18/22) | Forming Groups/Design Doc | Attended | Attended | Attended | Attended |
-| 3 (5/25/22)| Sprint 1 Start | --- | --- | --- | --- |
-| 4 (6/1/22)| info | --- | --- | --- | --- |
+| 3 (5/25/22)| Sprint 1 Start | Attended | Attended | Attended | Attended |
+| 4 (6/1/22)| Story Building and Sudo Code | --- | --- | --- | --- |
 | 5 (6/8/22)| info | --- | --- | --- | --- |
 | 6 (6/15/22)| info | --- | --- | --- | --- |
 | 7 (6/22/22)| Sprint 2 Start | --- | --- | --- | --- |
