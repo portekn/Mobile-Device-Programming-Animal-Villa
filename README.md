@@ -104,7 +104,7 @@ You have just moved into the town of Animal Villa! Introductions can be hard, bu
 
 
 ## Class Diagram
-![Class Diagram](https://github.com/portekn/Mobile-Device-Programming-Animal-Villa/blob/73444f57bbc2ccc11019ab19554065e46bbda7d6/Images/Animal-Villa-Class-Diagram-Final.png)
+![Class Diagram](https://github.com/portekn/Mobile-Device-Programming-Animal-Villa/blob/Design-Document-Draft/Images/Animal%20Villa%20Class%20Diagram%20Final.png)
 
 ## Class Diagram Descriptions:
 **Title:** The first screen the user sees. This is the title screen for the game.
