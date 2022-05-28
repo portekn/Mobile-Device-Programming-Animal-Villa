@@ -12,6 +12,24 @@
 - Frontend Developer: Elizabeth Bissinger
 - Integration Developer: Jake Plagge, Chloe(Cass) Motz
 
+## Scrum Board :
+| Sprint | Goals | Working | Completed |
+| --- | --- | --- | --- |
+| Sprint #1 | --- | Character Objects ||
+|| --- | Player Objects ||
+|| Prompt Methods|||
+|| Player Methods |||
+|| Character Methods |||
+|| Decision Matrix |||
+| Sprint #2 | Put together story |||
+|| Add Art |||
+|| Add Text Animation |||
+| Sprint #3 | Music and Sound |||
+|| Some Animation |||
+|| Add more prompts |||
+|| Create Settings |||
+|| Add Login Method |||
+
 ## Meeting Schedule :
 - Wednesdays @ 6:00 PM via Microsoft Teams
 - Sundays @ Any Time via Microsoft Teams (As Needed)
