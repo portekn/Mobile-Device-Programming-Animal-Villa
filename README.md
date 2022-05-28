@@ -120,26 +120,35 @@ You have just moved into the town of Animal Villa! Introductions can be hard, bu
    - When a player is having difficulties reading the prompt 
    - The player can easily access the text speed settings
 
-
 ## Class Diagram
 ![Class Diagram](https://github.com/portekn/Mobile-Device-Programming-Animal-Villa/blob/Design-Document-Draft/Images/Animal%20Villa%20Class%20Diagram%20Final.png)
 
 ## Class Diagram Descriptions:
-**Title:** The first screen the user sees. This is the title screen for the game.
+### Interfaces:
+   - **Home Screen:** The first screen the user sees. This is the title screen for the game.
+   - **Play Area:** This will host the actual game and the screen the user will interact most with.
+   - **Character List:** Screen where the player can view information on the characters they have meet.
+   - **Storage:**  Screen where the player can see what is in their inventory.
+   - **Settings:** Screen where the player can change the settings.
+   - **Sign-in:** Screen where the player can sign in to the game.
 
-**MainActivity:** This will host the actual game and the screen the user will interact most with.
+### Methods:
+   - **Start:** Method that starts the game/loads the game from a save.
+   - **Sign-in:** Method that signes the user into an account to load their saved progress.
+   - **Settings:** Methods that changes the settings of the game.
+   - **Art & Sound:** Method that retrieves the art and sound for the app.
+   - **Player:** Method that holds player information and allows for interaction with the app.
+   - **Character:** Method that holds character information and allows interaction with the app. 
+   - **Location:** Method that hodls location information and allows interaction with the app.
 
-**Choice 1:** One of two choices the player can make. Affects the storyline to a directed ending.
-
-**Choice 2:**  One of two choices the player can make. Affects the storyline to a directed ending.
-
-**Saving:** The automatic saving for the game.
-
-**IheartAffectDAO:** Interface for the heart interaction choices for the story.
-
-**IchaosAffectDAO:** Interface for the chaos (negative) interaction choices for the story.
-
-**ImoneyAffectDAO:** Interface for the money interaction choices for the story.
+### Objects:
+   - **Player:** Object that holds information related to the player.
+   - **Player Storage:** Object that holds information related to the players inventory.
+   - **Character:** Object that holds information related to the characters in the game.
+   - **Character Storage:** Object that holds information related to the characters inventory.
+   - **Location:** Object that holds information about a location.
+   - **Transportation:** Object that holds information about different modes of transportation.
+   - **Data:** Object that holds information on all prompts and where they are stored.
 
 ## Story Board
 ![Story Board Gameplay](https://github.com/portekn/Mobile-Device-Programming-Animal-Villa/blob/73444f57bbc2ccc11019ab19554065e46bbda7d6/Images/storyboard%20idea.PNG)
