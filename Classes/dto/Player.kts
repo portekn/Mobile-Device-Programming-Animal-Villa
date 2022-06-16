@@ -1,0 +1,4 @@
+// status
+//money
+//energy
+//location(?)
