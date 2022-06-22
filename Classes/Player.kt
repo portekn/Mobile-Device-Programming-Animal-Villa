@@ -1,26 +1,35 @@
-//Player attributes and stats to be inherited will go here.
+/**
+ * Data object that holds the player's data.
+ *
+ * @property status The status of the player.
+ * @property money how much money the player currently has.
+ * @property energy how much energy the player currently has.
+ * @property playerStorage the player's storage
+ */
+data class Player(var status : String, var money : Int, var energy : Int, var playerStorage : Int) {
 
-public class Player{
+    var playerEffect = Array<String>()
 
-    val status;
-    val money;
-    val energy;
+    /**
+     * This returns the player's current status as a string.
+     *
+     * @return the status of the player
+     */
+    override fun toString(): String {
+        return status
+    }
 
-    val playerStorage;
-    //Stores an array of the interactions a player has had with charachters, for use in
-    //determining prompts/endings
-    val playerEffect = Array();
-
-    //basic getters and add/ remove methods.
-
+    /**
+     * Instantiates the player object for the game.
+     */
     fun GeneratePlayer(){
-        //sets up the player and generates the player data file.
+        return "Not Implemented"
     }
 
+    /**
+     * Reset the player's stats.
+     */
     fun ResetPlayer(){
-        //resets player stats so the game can be replayed without having to regenerate files.
-
+        return "Not Implemented"
     }
-
-
 }
