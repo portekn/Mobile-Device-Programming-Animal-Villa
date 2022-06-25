@@ -1,4 +1,6 @@
 package com.animal_villa.dao
-
-class ISettingsDAO {
+/**
+ * Interface for RetrofitClientInstance implementation
+ */
+interface ISettingsDAO {
 }

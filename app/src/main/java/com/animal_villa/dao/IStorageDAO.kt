@@ -1,4 +1,6 @@
 package com.animal_villa.dao
-
-class IStorageDAO {
+/**
+ * Interface for RetrofitClientInstance implementation
+ */
+interface IStorageDAO {
 }

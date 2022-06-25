@@ -1,4 +1,6 @@
 package com.animal_villa.dao
-
-class IPlayAreaDAO {
+/**
+ * Interface for RetrofitClientInstance implementation
+ */
+interface IPlayAreaDAO {
 }

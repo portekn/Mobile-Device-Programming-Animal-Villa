@@ -1,4 +1,6 @@
 package com.animal_villa.dao
-
-class ICharacterListDAO {
+/**
+ * Interface for RetrofitClientInstance implementation
+ */
+interface ICharacterListDAO {
 }

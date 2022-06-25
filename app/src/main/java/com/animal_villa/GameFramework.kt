@@ -6,12 +6,13 @@ import androidx.activity.ComponentActivity
 import com.example.main_animal_villa.R
 //import java.lang.reflect.Modifier
 
-class GameFramework : ComponentActivity() {
+public class GameFramework : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
 }
+// Changes made to indentation
 
         /* {
             AnimalVillaTheme {

@@ -1,4 +1,6 @@
 package com.animal_villa.dao
-
-class ISignInDAO {
+/**
+ * Interface for RetrofitClientInstance implementation
+ */
+interface ISignInDAO {
 }
