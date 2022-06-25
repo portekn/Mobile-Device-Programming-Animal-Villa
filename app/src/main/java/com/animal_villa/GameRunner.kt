@@ -2,32 +2,23 @@ package com.animal_villa
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import com.animal_villa.ui.theme.AnimalVillaTheme
-import java.lang.reflect.Modifier
+import com.example.main_animal_villa.R
+
 
 class GameRunner : ComponentActivity(){
-    override fun onCreate(savedInstanceState: Bundle?){
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent{
-            AnimalVillaTheme {
-                modifier = Modifier.fillMaxSize(),
-                color = MaterialTheme.colors.background
-                {
-                    Open("Android")
-                }
-            }
-        }
+        setContentView(R.layout.activity_main)
     }
 }
-@Composable
-fun Open(){
-    Text(text= "Testing Application")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview(){
-    AnimalVillaTheme {
-        Open("Android")
-    }
-}
+// @Composable
+// fun Open(){
+// Text(text= "Testing Application")
+// }
+//
+// @Preview(showBackground = true)
+// @Composable
+// fun DefaultPreview(){
+// AnimalVillaTheme {
+// Open("Android")
+// }
