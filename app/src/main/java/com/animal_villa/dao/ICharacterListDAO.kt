@@ -4,5 +4,5 @@ import com.animal_villa.dto.Character
 import retrofit2.Call
 
 
-class ICharacterListDAO {
+interface ICharacterListDAO {
 }

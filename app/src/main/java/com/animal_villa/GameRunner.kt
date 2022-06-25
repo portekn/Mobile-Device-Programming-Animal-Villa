@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import com.example.main_animal_villa.R
 
 
-class GameRunner : ComponentActivity(){
+public class GameRunner : ComponentActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
