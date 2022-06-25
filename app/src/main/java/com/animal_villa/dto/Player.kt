@@ -1,4 +1,4 @@
 package com.animal_villa.dto
 
-class Player {
+data class Player (val userId: String = "", var displayName: String?){
 }

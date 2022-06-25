@@ -1,4 +1,4 @@
 package com.animal_villa.dto
 
-class Character {
+data class Character (val characterName: String = "", val characterFamily: String = ""){
 }
