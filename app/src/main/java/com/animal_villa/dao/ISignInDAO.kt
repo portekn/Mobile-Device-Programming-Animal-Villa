@@ -1,4 +1,7 @@
 package com.animal_villa.dao
 
-class ISignInDAO {
+import androidx.room.Dao
+
+@Dao
+interface ISignInDAO {
 }

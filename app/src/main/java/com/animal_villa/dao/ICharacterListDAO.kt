@@ -1,4 +1,7 @@
 package com.animal_villa.dao
 
-class ICharacterListDAO {
+import androidx.room.Dao
+
+@Dao
+interface ICharacterListDAO {
 }
