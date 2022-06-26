@@ -1,4 +1,7 @@
 package com.animal_villa.dao
 
-class IStorageDAO {
+import androidx.room.Dao
+
+@Dao
+interface IStorageDAO {
 }

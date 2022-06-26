@@ -1,4 +1,7 @@
 package com.animal_villa.dao
 
-class IPlayAreaDAO {
+import androidx.room.Dao
+
+@Dao
+interface IPlayAreaDAO {
 }
