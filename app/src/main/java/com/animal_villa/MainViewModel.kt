@@ -1,4 +1,5 @@
 package com.animal_villa
 
-class MainViewModel {
+class MainViewModel() {
+
 }

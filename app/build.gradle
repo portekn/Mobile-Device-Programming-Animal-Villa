@@ -55,5 +55,8 @@ dependencies {
     //retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.7.1'
     implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
+    testImplementation 'androidx.arch.core:core-testing:2.1.0'
+    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0'
+    testImplementation 'io.mockk:mockk:1.12.2'
 
 }
