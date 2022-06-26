@@ -1,4 +1,4 @@
 package com.animal_villa.dto
 
-class Character {
+public class Character {
 }
