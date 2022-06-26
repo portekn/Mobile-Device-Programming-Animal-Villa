@@ -1,4 +1,7 @@
 package com.animal_villa.dto
 
-class Character {
+data class Character(var name : String, var occupation : String)    {
+    override fun toString(): String {
+        return "$name $occupation"
+    }
 }
