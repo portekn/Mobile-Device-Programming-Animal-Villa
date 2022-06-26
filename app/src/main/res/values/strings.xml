@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Main_Animal_Villa</string>
-    <string name="edit_message">Test Message</string>
-    <string name="button_send">Send</string>
+    <string name="edit_message">Animal Villa</string>
+    <string name="button_send">Start</string>
 </resources>
