@@ -39,5 +39,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="340dp"
+        android:autoText="false"
         android:text="@string/response_text" />
 </RelativeLayout>

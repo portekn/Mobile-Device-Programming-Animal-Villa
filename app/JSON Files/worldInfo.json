@@ -1,0 +1,18 @@
+{
+  "Week":
+  {
+    "Monday": "",
+    "Tuesday": "",
+    "Wednesday": "",
+    "Thursday": "",
+    "Friday": "",
+    "Saturday": "",
+    "Sunday": ""
+  },
+   "Prompts":
+   {
+     "Intro": "Welcome to Animal Villa! This cute and quaint village has officially become your new home. It took some time, but you had finally settled down in this small woodland area. You had always wanted to live off the land with a close community, and now it has finally happened! Looks like the welcome wagon is arriving. You should open the door and say hello!",
+     "Good": "This past week has been amazing! All your hard work has paid off. You have made so many new friends here in Animal Villa. You have impacted everyone’s lives for the better. Who knew that a fresh face was exactly what this village needed? Everyone has made it like you have lived here your entire life. You are a part of the family! Moving to Animal Villa was just what you needed.",
+     "Bad": "Suspicion has been raised following your arrival in Animal Villa. You hear what sounds like angry cries in the distance. Soon you hear a bang on your front door. The innocent people of Animal Villa flood your home and drag you out into the main square. You hear some of the animals’ whisper about witches and demons while you are tied to a wooden pole. The mayor addresses the crowd, “Tonight, we end the rumors! Let us end this witch and send them back to the devil they spawned from. For the protection of our children, our town, our lives! Burn the witch!”. The animals begin to chant as a torch is thrown into the kindling below your feet. You are soon engulfed in the flames, and everything fades to black…"
+   }
+}
