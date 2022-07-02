@@ -1,4 +1,4 @@
 package com.animal_villa.dto
 
-class Player {
+data class Player (var status: Int, var money: Int, var energy: Int, var currentLocation: Int){
 }

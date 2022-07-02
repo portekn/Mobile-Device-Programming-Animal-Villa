@@ -1,4 +1,4 @@
 package com.animal_villa.dto
 
-class Animal {
+ data class Animal (val characterId : Int = 0) {
 }

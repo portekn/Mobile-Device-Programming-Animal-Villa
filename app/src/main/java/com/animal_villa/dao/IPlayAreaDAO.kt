@@ -1,4 +1,7 @@
 package com.animal_villa.dao
 
-class IPlayAreaDAO {
+import retrofit2.Call
+import androidx.room.Dao
+
+interface IPlayAreaDAO {
 }
