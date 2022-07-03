@@ -22,6 +22,22 @@ class GameFramework(textView: TextView, gameRunner: GameRunner){
         response.text = gameRunner.getString(R.string.no_selection)
     }
 
+    public void checkPlayerStats(){
+        PlayGames.getPlayerStatsClient(this)
+            .loadPlayerStats(true)
+            .addOnCompleteListener(new OnCompletedListener<AnnotatedData<PlayerStats>>() {
+                public void onComplete(Task<AnnotatedData<PlayerStats>> task){
+                    if (CheckMaxStatus() = 100){
+                        status = 100
+
+                    }else (CheckMinStatus() = 0){
+                        status = 0
+                    }
+    
+                }
+            }
+    }
+
     //Status Changer - Alters the status of our player
         //if the player does something a character likes
             //Check for max status (CALL METHOD)
@@ -61,7 +77,7 @@ class GameFramework(textView: TextView, gameRunner: GameRunner){
 
     //CheckMaxStatus()
 
-    //CheckMinStatis()
+    //CheckMinStatus()
 
     //CheckMinMoney()
 
