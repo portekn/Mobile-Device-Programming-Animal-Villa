@@ -2,6 +2,12 @@ package com.animal_villa.dto
 
 class Player (){
 
+    val name: String = "Neighbor"
+    var status: int = 0
+    var money: int = 20
+    var energy: int = 30
+    var location: int
+
     //Status - How much characters like the player. Out of 100
     val status = 75
 
