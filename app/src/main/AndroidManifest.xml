@@ -16,7 +16,7 @@
         android:theme="@style/Theme.Main_Animal_Villa"
         tools:targetApi="31">
 
-        <activity android:name=".DisplayMessageActivity"
+        <activity android:name="com.animal_villa.GameRunner"
             android:parentActivityName="com.animal_villa.GameRunner"
             android:value="com.animal_villa.GameRunner"
             android:exported="true">
