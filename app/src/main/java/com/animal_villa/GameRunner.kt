@@ -40,15 +40,3 @@ class NoButtonClicked(gameFramework: GameFramework) : View.OnClickListener{
         gameFrame.noButton()
     }
 }
-
-// @Composable
-// fun Open(){
-// Text(text= "Testing Application")
-// }
-//
-// @Preview(showBackground = true)
-// @Composable
-// fun DefaultPreview(){
-// AnimalVillaTheme {
-// Open("Android")
-// }
