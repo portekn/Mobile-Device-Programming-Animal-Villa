@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "390214539999",
+    "project_id": "animal-villa",
+    "storage_bucket": "animal-villa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390214539999:android:732aa5e271e7fcbcbb676a",
+        "android_client_info": {
+          "package_name": "com.example.main_animal_villa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390214539999-5veklmporbaf5ep98kbdetmvmscl0usk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcZ3nHf7_w51qoqaETIMuwKe_HudP4ggw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390214539999-5veklmporbaf5ep98kbdetmvmscl0usk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
