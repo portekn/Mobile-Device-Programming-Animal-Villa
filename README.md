@@ -15,18 +15,14 @@
 ## Scrum Board :
 | Sprint | Goals | Working | Completed |
 | --- | --- | --- | --- |
-| Sprint #1 | --- | Character Objects ||
-|| --- | Player Objects ||
-|| Prompt Methods|||
-|| Player Methods |||
-|| Character Methods |||
-|| Decision Matrix |||
-| Sprint #2 | Put together story |||
-|| Add Art |||
-|| Add Text Animation |||
-| Sprint #3 | Music and Sound |||
+| Sprint #1 | --- | --- | Set up repository|
+|| --- | --- | Struggle |
+| Sprint #2 | Looper Method |||
+|| JSON Files |||
+|| Player & Character Methods |||
+|| Tutorial Setup |||
+| Sprint #3 | More Story |||
 || Some Animation |||
-|| Add more prompts |||
 || Create Settings |||
 || Add Login Method |||
 
@@ -42,9 +38,9 @@
 | 4 (6/1/22)| Story Building and Sudo Code | Attended | Attended | Attended | Attended |
 | 5 (6/8/22)| info | Attended | Attended | Attended | Attended |
 | 6 (6/15/22)| info | Excused | Attended | Excused | Attended |
-| 7 (6/22/22)| Sprint 2 Start | --- | --- | --- | --- |
-| 8 (6/29/22)| info | --- | --- | --- | --- |
-| 9 (7/6/22) | info | --- | --- | --- | --- |
+| 7 (6/22/22)| Sprint 2 Start | Absent | Attended | Attended | Attended |
+| 8 (6/29/22)| info | Attended | Attended | Attended | Attended |
+| 9 (7/6/22) | info | Attended | Attended | Attended | Attended |
 | 10 (7/13/22) | info | --- | --- | --- | --- |
 | 11 (7/20/22) | Sprint 3 Start | --- | --- | --- | --- |
 | 12 (7/27/22) | info | --- | --- | --- | --- |
