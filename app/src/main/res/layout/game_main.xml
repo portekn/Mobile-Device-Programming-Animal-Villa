@@ -41,4 +41,13 @@
         android:layout_marginTop="340dp"
         android:autoText="false"
         android:text="@string/response_text" />
+
+    <Button
+        android:id="@+id/readJSONButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="147dp"
+        android:text="Read JSON File" />
 </RelativeLayout>

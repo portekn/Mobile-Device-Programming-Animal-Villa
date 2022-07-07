@@ -1,18 +1,10 @@
 package com.animal_villa
 
-import android.os.Bundle
-import android.provider.Settings.Global.getString
-import android.view.View
-import android.widget.Button
 import android.widget.TextView
-import androidx.activity.ComponentActivity
-//import com.animal_villa.ui.theme.AnimalVillaTheme
 import com.example.main_animal_villa.R
-//import java.lang.reflect.Modifier
 
-class GameFramework(textView: TextView, gameRunner: GameRunner){
+class GameFramework(textView: TextView, private val gameRunner: GameRunner){
     private val response : TextView = textView
-    private val gameRunner = gameRunner
 
     //Buttons for testing only
     fun yesButton(){
@@ -21,6 +13,10 @@ class GameFramework(textView: TextView, gameRunner: GameRunner){
     fun noButton(){
         response.text = gameRunner.getString(R.string.no_selection)
     }
+    fun readJSONButton(){
+
+    }
+
 
     //Status Changer - Alters the status of our player
         //if the player does something a character likes
@@ -50,10 +46,10 @@ class GameFramework(textView: TextView, gameRunner: GameRunner){
         //if player does an action
             //Check energy level (CALL METHOD)
                 //if energy level > needed energy
-                    //take away needed enery from energy level
+                    //take away needed energy from energy level
                 //else if energy level < needed energy
                     //Send player home
-                //else player enery == 0
+                //else player energy == 0
                     //Send player home
 
     //currentLocation Changer - Records current location of player
@@ -61,7 +57,7 @@ class GameFramework(textView: TextView, gameRunner: GameRunner){
 
     //CheckMaxStatus()
 
-    //CheckMinStatis()
+    //CheckMinStats()
 
     //CheckMinMoney()
 
