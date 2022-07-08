@@ -13,9 +13,7 @@ class GameFramework(textView: TextView, private val gameRunner: GameRunner){
     fun noButton(){
         response.text = gameRunner.getString(R.string.no_selection)
     }
-    fun readJSONButton(){
 
-    }
 
 
     //Status Changer - Alters the status of our player
