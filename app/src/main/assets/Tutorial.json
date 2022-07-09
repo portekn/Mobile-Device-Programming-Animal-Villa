@@ -1,0 +1,17 @@
+{
+  "1":
+  {
+    "Prompt": "My Prompt",
+    "Energy": 2,
+    "Money": 4,
+    "Status": 6,
+    "Left": 2,
+    "Right": 3
+  },
+
+  "2":
+  {},
+
+  "3":
+  {}
+}
