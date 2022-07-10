@@ -39,7 +39,7 @@ class GameFramework(textView: TextView, gameRunner: GameRunner){
                     }
 
                     if (CheckMinStatus() > 0){
-                        statuc = status - like
+                        status = status - like
                     }
 
     
