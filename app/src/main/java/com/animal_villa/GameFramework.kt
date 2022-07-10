@@ -22,6 +22,20 @@ class GameFramework(textView: TextView, gameRunner: GameRunner){
         response.text = gameRunner.getString(R.string.no_selection)
     }
 
+
+    //Status Changer - Alters the status of our player
+        //if the player does something a character likes
+            //Check for max status (CALL METHOD)
+                //if not going to go over max status
+                    //Add status
+                //else set status to 100
+
+        //else the player does something a character does not like
+            //Check for min status (CALL METHOD)
+                //if not going to go under min status
+                    //Add status
+                //else set status to 100
+
     public void checkPlayerStats(){
         PlayGames.getPlayerStatsClient(this)
             .loadPlayerStats(true)
@@ -47,19 +61,6 @@ class GameFramework(textView: TextView, gameRunner: GameRunner){
             }
     }
 
-    //Status Changer - Alters the status of our player
-        //if the player does something a character likes
-            //Check for max status (CALL METHOD)
-                //if not going to go over max status
-                    //Add status
-                //else set status to 100
-
-        //else the player does something a character does not like
-            //Check for min status (CALL METHOD)
-                //if not going to go under min status
-                    //Add status
-                //else set status to 100
-
 
     //Money Changer - Alters the amount of money our player has
         //if player spends money
@@ -70,6 +71,14 @@ class GameFramework(textView: TextView, gameRunner: GameRunner){
 
         //else the player earns money
             //add money to player
+
+
+            if (money > CheckMinMoney)
+                money = money - moneySpent
+
+            else  
+                print(message : )
+
 
     //Energy Changer - Alters the amount of energy our player has
         //if player does an action
