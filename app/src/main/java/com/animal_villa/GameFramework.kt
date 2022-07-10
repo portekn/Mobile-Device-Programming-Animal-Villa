@@ -30,9 +30,18 @@ class GameFramework(textView: TextView, gameRunner: GameRunner){
                     if (CheckMaxStatus() = 100){
                         status = 100
 
-                    }else (CheckMinStatus() = 0){
+                    if (CheckMaxStatus() < 100){
+                        status = status +like
+                    }
+
+                    }if (CheckMinStatus() = 0){
                         status = 0
                     }
+
+                    if (CheckMinStatus() > 0){
+                        statuc = status - like
+                    }
+
     
                 }
             }
