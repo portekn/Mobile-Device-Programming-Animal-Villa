@@ -1,4 +1,4 @@
-package com.example.main_animal_villa
+package com.example.animalvilla
 
 import org.junit.Test
 

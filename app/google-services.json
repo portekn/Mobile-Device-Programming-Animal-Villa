@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:860932640622:android:869aa6989d96e99e023b7f",
         "android_client_info": {
-          "package_name": "com.example.main_animal_villa"
+          "package_name": "app.AnimalVilla"
         }
       },
       "oauth_client": [
