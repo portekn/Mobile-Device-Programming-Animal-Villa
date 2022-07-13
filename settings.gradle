@@ -10,7 +10,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
 }
-rootProject.name = "Main_Animal_Villa"
+rootProject.name = "AnimalVilla"
 include ':app'

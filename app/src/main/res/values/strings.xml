@@ -1,10 +1,6 @@
 <resources>
-    <string name="app_name">Main_Animal_Villa</string>
-    <string name="edit_message">Animal Villa</string>
-    <string name="button_send">Start</string>
-    <string name="prompt_text">Please Select"</string>
-    <string name="response_text">You have not yet selected an option</string>
-    <string name="yes_selection">You Selected Yes</string>
-    <string name="no_selection">You Selected No</string>
-
+    <string name="app_name">AnimalVilla</string>
+    <string name="button">Button</string>
+    <string name="start">Start</string>
+    <string name="animal_villa">Animal Villa</string>
 </resources>
