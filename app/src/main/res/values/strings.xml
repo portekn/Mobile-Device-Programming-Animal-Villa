@@ -2,5 +2,7 @@
     <string name="app_name">AnimalVilla</string>
     <string name="button">Button</string>
     <string name="start">Start</string>
-    <string name="animal_villa">Animal Villa</string>
+    <string name="animal_villa">Animal Villa</string><![CDATA[
+    >
+]]>
 </resources>

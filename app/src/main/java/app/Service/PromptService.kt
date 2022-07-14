@@ -40,7 +40,7 @@ class PromptService(private val application: Application) : IPromptService {
             }
             }
         catch(e: Exception) {
-                Log.e(TAG, "Error Saving Prompts ${e.message}")
+                Log.e(TAG, "***************************Error Saving Prompts ${e.message}")
             }
         }
 

@@ -8,7 +8,7 @@ import org.koin.dsl.module
 
 
 val appModule = module {
-    single { MainViewModel(get()) }
+    single { MainViewModel(get(), this) }
     viewModel { ApplicationViewModel(androidApplication())}
     single<IPromptService> { PromptService(androidApplication())
     }
