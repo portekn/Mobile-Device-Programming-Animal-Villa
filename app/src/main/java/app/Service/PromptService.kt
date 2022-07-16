@@ -4,35 +4,29 @@ import android.app.Application
 import android.content.ContentValues.TAG
 import android.util.Log
 import androidx.room.Room
-import app.DAO.ILocalPromptDAO
-import app.DAO.IPromptDAO
-import app.DAO.PromptDatabase
+//import app.DAO.ILocalPromptDAO
+//import app.DAO.IPromptDAO
+//import app.DAO.PromptDatabase
 import app.DTO.Prompt
-import app.RetrofitClientInstance
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.withContext
-import retrofit2.awaitResponse
+import retrofit2.Call
 
-interface IPromptService {
-    suspend fun  fetchPrompts() : List<Prompt>?
-    fun getLocalPromptDAO(): ILocalPromptDAO
-}
-class PromptService(private val application: Application) : IPromptService {
+/*
+class PromptService(application: Application){
 
-    lateinit var db: PromptDatabase
+    private val application = application
 
-    override suspend fun fetchPrompts(): List<Prompt>? {
-        return withContext(Dispatchers.IO){
+    internal suspend fun fetchPrompts(_prompts: Int){
+      withContext(Dispatchers.IO){
             val service = RetrofitClientInstance.retrofitInstance?.create(IPromptDAO::class.java)
             val prompts = async {service?.getPrompts()}
-            val result = prompts.await()?.awaitResponse()?.body()
-            updateLocalPromptStorage(result)
-            return@withContext result
+            updateLocalPromptStorage(prompts.await())
         }
     }
 
-    private fun  updateLocalPromptStorage(prompts : ArrayList<Prompt>?){
+    private suspend fun updateLocalPromptStorage(prompts: Call<ArrayList<Prompt>>?){
         try {
             prompts?.let {
                 val localPromptDAO = getLocalPromptDAO()
@@ -44,11 +38,16 @@ class PromptService(private val application: Application) : IPromptService {
             }
         }
 
-    override fun getLocalPromptDAO(): ILocalPromptDAO {
-        if (!this::db.isInitialized) {
-            db = Room.databaseBuilder(application, PromptDatabase::class.java, "My Prompts").build()
-        }
-        return db.localPromptDAO()
+    private fun getLocalPromptDAO(): ILocalPromptDAO {
+        val db = Room.databaseBuilder(application, PromptDatabase::class.java, "myprompts").build()
+        val localPromptDAO = db.localPromptDAO()
+        return localPromptDAO
+    }
+
+    internal fun save (prompt: Prompt){
+        getLocalPromptDAO().save(prompt)
     }
 }
 
+
+ */

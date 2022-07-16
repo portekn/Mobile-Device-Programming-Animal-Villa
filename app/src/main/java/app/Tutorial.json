@@ -1,0 +1,29 @@
+{
+  "1": {
+    "PromptText": "My Prompt",
+    "Energy": 2,
+    "Money": 4,
+    "Status": 6,
+    "Left": 2,
+    "Right": 3,
+    "id": 1
+  },
+  "2": {
+    "PromptText": "My 2nd Prompt",
+    "Energy": 2,
+    "Money": 4,
+    "Status": 6,
+    "Left": 2,
+    "Right": 3,
+    "id": 2
+  },
+  "3": {
+    "PromptText": "My 3nd Prompt",
+    "Energy": 2,
+    "Money": 4,
+    "Status": 6,
+    "Left": 2,
+    "Right": 3,
+    "id": 3
+  }
+}

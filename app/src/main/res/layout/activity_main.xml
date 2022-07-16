@@ -8,15 +8,14 @@
 
     <Button
         android:id="@+id/StartButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="92dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="452dp"
         android:text="@string/start"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.837" />
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
 
     <TextView
         android:id="@+id/Title"
@@ -25,9 +24,24 @@
         android:scaleX="3"
         android:scaleY="3"
         android:text="@string/animal_villa"
-        app:layout_constraintBottom_toTopOf="@+id/StartButton"
+        android:textColor="#455A64"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="315dp"
+        android:layout_height="363dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/StartButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        app:layout_constraintVertical_bias="0.522"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
