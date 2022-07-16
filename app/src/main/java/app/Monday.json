@@ -1,0 +1,72 @@
+{
+  "1": {
+    "PromptText": "Bright light slipped through your curtains. The soft glow of the morning light was not what had woken you up this early morning. It was a knock upon your door. With a groggy mind, you made it to the door. Behind it was.... Cornelius! What would he need this early in the morning?",
+    "LeftOption": "Continue",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Continue",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 2,
+    "NextRight": 2,
+    "id": 1
+  },
+  "2": {
+    "PromptText": " “Good morning neighbor! I apologize for waking you up so early this morning. Unfortunately, Ruby has come down with a nasty cold. We need an extra hand to help with this morning's chores on the farm. I would ask everyone else around, but everyone’s got their own morning routines. Would it be too much of a bother to ask for your help?”",
+    "LeftOption": "Sure thing, Cornelius!",
+    "LeftEnergy": -10,
+    "LeftMoney": 0,
+    "LeftStatus": 5,
+    "RightOption": "I’m sorry, but I was hoping to get some more sleep in… ",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": -5,
+    "NextLeft": 3,
+    "NextRight": 0,
+    "id": 2
+  },
+  "3": {
+    "PromptText": "You spend your morning hard at work. Sweat dripping down your face and back aching. It's a good ache, though. It reminds you that you've been doing hard work helping out your neighbor. After hours of hard work, you go inside for a drink and find Rosemary, Cornelius' wife, at the kitchen table.",
+    "LeftOption": "Continue",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Continue",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 4,
+    "NextRight": 4,
+    "id": 3
+  },
+  "4": {
+    "PromptText": " “Well, I’ll be darned. Neighbor, you are just the person I wanted to see. I know Cory has you toiling out there in the field. Max is just too young to be helping in the field. He usually stays in the kitchen to make sure our produce is in tip top shape. Ruby usually carries in the produce for us to examine. With her coming down with that nasty cold, I was wondering if you could take a quick moment to help little old me and carry these heavy baskets into the kitchen. Maybe if you help me out, I could give you some of this week’s produce for free. Cory won’t even notice they’re gone!” ",
+    "LeftOption": "I'd like to stay and help, but I have to get back to helping Cornelius.",
+    "LeftEnergy": -10,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "You can count on me, Mrs. Rabbit",
+    "RightEnergy": -5,
+    "RightMoney": 5,
+    "RightStatus": 5,
+    "NextLeft": 5,
+    "NextRight": 5,
+    "id": 4
+  },
+  "4": {
+    "PromptText": "You spent your day helping out the Rabbit family. Even though your bones ache and you are in dire need of a bath, you feel like you spent the day productive! Now the only thing left to do is either go home for the night or check in with other neighbors.",
+    "LeftOption": "Time to sleep for the night",
+    "LeftEnergy": 15,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Let's check out the village at night! ",
+    "RightEnergy": -5,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 0,
+    "NextRight": 6,
+    "id": 5
+  }
+}
