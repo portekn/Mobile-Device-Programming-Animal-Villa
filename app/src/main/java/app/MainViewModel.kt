@@ -2,17 +2,11 @@ package app
 
 import android.os.StrictMode
 import android.view.View
-import android.widget.TextView
-import androidx.compose.runtime.Composable
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import app.DTO.Prompt
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreSettings
-import com.google.firebase.storage.FirebaseStorage
-import org.json.JSONArray
 import org.json.JSONObject
-import org.w3c.dom.Text
 import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.net.URL
@@ -24,11 +18,11 @@ class MainViewModel(textView: View, mainViewModel: MainActivity){
     //Variables
     //val output: TextView = textView
     //val mainViewModel = mainViewModel
-    private var prompts: MutableLiveData<ArrayList<Prompt>> = MutableLiveData<ArrayList<Prompt>>()
+    //private lateinit var _prompts: MutableList<MutableList<Prompt>>
 
     //Firebase
     private var firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
-    private var storageReference = FirebaseStorage.getInstance().reference
+    //private var storageReference = FirebaseStorage.getInstance().reference
 
     init {
         firestore = FirebaseFirestore.getInstance()
@@ -36,15 +30,15 @@ class MainViewModel(textView: View, mainViewModel: MainActivity){
     }
 
     fun startButton(){
-        getthePrompts()
+
+        val queue = getAllPrompts()
+       println( queue?.get(2).toString())
     }
 }
 
-    //Fetch Prompts
+    //Get All Prompts
     //Get prompt from array list and present it to the user
-    //ADD FUNCTION HERE
-
-fun getthePrompts(): MutableList<Prompt>? {
+fun getAllPrompts(): MutableList<Prompt>? {
     val queue= LinkedBlockingQueue<MutableList<Prompt>?>()
     thread {
         try{
@@ -56,7 +50,7 @@ fun getthePrompts(): MutableList<Prompt>? {
             var data = "";
 
             while (inputLine != null) {
-                println(inputLine)
+                //println(inputLine)
                 data += inputLine;
                 inputLine = inStream.readLine();
             }
@@ -88,7 +82,6 @@ fun getthePrompts(): MutableList<Prompt>? {
                 prompts.add(Prompt(promptText,energy,money,status,left,right))
             }
             */
-
             val jRecord = JSONObject(data).get("record") as JSONObject;
             var i = 1;
             while (true) {
@@ -96,17 +89,16 @@ fun getthePrompts(): MutableList<Prompt>? {
                     break;
 
                 val jPrompt = jRecord.get(i.toString()) as JSONObject
-                println(jPrompt)
+                //println(jPrompt) //Testing
                 val promptText = jPrompt.get("PromptText").toString()
                 val energy = jPrompt.get("Energy").toString().toInt()
                 val money = jPrompt.get("Money").toString().toInt()
                 val status = jPrompt.get("Status").toString().toInt()
                 val left = jPrompt.get("Left").toString().toInt()
                 val right = jPrompt.get("Right").toString().toInt()
-                println(promptText + " " + energy  + " " + money + " " + status + " " + left + " " + right)
+                println("$promptText $energy $money $status $left $right")
                 prompts.add(Prompt(promptText, energy, money, status, left, right))
                 i++
-
             }
             queue.add(prompts)
         }catch(e:Exception){
@@ -115,6 +107,10 @@ fun getthePrompts(): MutableList<Prompt>? {
     }
     return queue.take();
 }
+
+    //Select next prompt
+    //if left button, pull this prompt
+    //else right button, pull this prompt
 
     //Left Button
     //Program searches through list for corresponding number and everything loops
