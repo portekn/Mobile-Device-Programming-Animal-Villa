@@ -80,7 +80,7 @@
       "RightMoney": 0,
       "RightStatus": 0,
       "NextLeft": 0,
-      "NextRight": 13,
+      "NextRight": 14,
       "id": 6
     },
     "7": {
@@ -150,7 +150,7 @@
       "RightMoney": 0,
       "RightStatus": 0,
       "NextLeft": 0,
-      "NextRight": 13,
+      "NextRight": 14,
       "id": 11
     },
     "12": {
@@ -167,7 +167,21 @@
       "NextRight": 0,
       "id": 12
     },
-    "13": {
+  "13": {
+    "PromptText": "You spend your day unpacking the rest of your items. This house is really starting to feel like a home now. There are a few hours left in the day. Should you spend the night at home, or check out the nightlife of the village?",
+    "LeftOption": "Stay in for the night",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Let's check out the village at night! ",
+    "RightEnergy": -5,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 0,
+    "NextRight": 14,
+    "id": 13
+  },
+  "14": {
       "PromptText": "Soft glow of lights decorate the village square. A few stalls are still remain open, but people are still bustling around. Who knew this place would be so busy at night! You spend your evening looking around the village at night. You even buy yourself some soaking salts to help relieve your pain! As soon as you get home, you flop into bed, tired from today's activities.",
       "LeftOption": "Continue to the next day.",
       "LeftEnergy": 0,
@@ -179,20 +193,7 @@
       "RightStatus": 0,
       "NextLeft": 0,
       "NextRight": 0,
-      "id": 13
-    },
-  "14": {
-    "PromptText": "You spend your day unpacking the rest of your items. This house is really starting to feel like a home now. There are a few hours left in the day. Should you spend the night at home, or check out the nightlife of the village?",
-    "LeftOption": "Stay in for the night",
-    "LeftEnergy": 0,
-    "LeftMoney": 0,
-    "LeftStatus": 0,
-    "RightOption": "Let's check out the village at night! ",
-    "RightEnergy": -5,
-    "RightMoney": 0,
-    "RightStatus": 0,
-    "NextLeft": 0,
-    "NextRight": 13,
-    "id": 14
-  }
+      "id": 14
+    }
+
   }

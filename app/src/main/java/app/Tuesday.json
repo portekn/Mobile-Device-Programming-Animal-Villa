@@ -1,0 +1,16 @@
+{
+  "1": {
+    "PromptText": " ",
+    "LeftOption": "Continue.",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Continue.",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 2,
+    "NextRight": 2,
+    "id": 1
+  }
+}
