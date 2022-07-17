@@ -13,8 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AnimalVilla"
         tools:targetApi="31">
+        <activity android:name="app.GamePlayModel"
+                  android:screenOrientation="landscape" />
         <activity android:name="app.MainActivity"
-                  android:exported="true">
+                  android:exported="true"
+                  android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

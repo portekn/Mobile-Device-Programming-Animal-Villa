@@ -1,8 +1,10 @@
 package app
 
+import android.content.Intent
 import android.os.StrictMode
 import android.view.View
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import androidx.core.view.isVisible
 import app.DTO.Prompt
 import com.google.firebase.firestore.FirebaseFirestore
@@ -26,39 +28,35 @@ class MainViewModel(textView: TextView, private val mainViewModel: MainActivity)
     //Firebase
     private var firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
     private var storageReference = FirebaseStorage.getInstance().reference
+
     init {
         firestore = FirebaseFirestore.getInstance()
         firestore.firestoreSettings = FirebaseFirestoreSettings.Builder().build()
     }
 
-    fun startButton() {
+    //Get All Prompts for use in the app
+    private fun getAllPrompts(): MutableList<Prompt>? {
+        val queue = LinkedBlockingQueue<MutableList<Prompt>?>()
+        thread {
+            try {
+                StrictMode.setThreadPolicy(
+                    StrictMode.ThreadPolicy.Builder().detectNetwork().permitAll().build()
+                )
+                val yahoo = URL("https://api.jsonbin.io/v3/b/62ca4dbc5d53821c3097eaef/")
+                val inStream = BufferedReader(InputStreamReader(yahoo.openStream()))
 
-        respose.isVisible = false
-        //println(queue?.get(1).toString())
-    }
-}
+                var inputLine = inStream.readLine()
+                var data = "";
 
-//Get All Prompts for use in the app
-fun getAllPrompts(): MutableList<Prompt>? {
-    val queue= LinkedBlockingQueue<MutableList<Prompt>?>()
-    thread {
-        try{
-            StrictMode.setThreadPolicy(StrictMode.ThreadPolicy.Builder().detectNetwork().permitAll().build())
-            val yahoo = URL("https://api.jsonbin.io/v3/b/62ca4dbc5d53821c3097eaef/")
-            val inStream = BufferedReader(InputStreamReader(yahoo.openStream()))
+                while (inputLine != null) {
+                    data += inputLine;
+                    inputLine = inStream.readLine();
+                }
+                inStream.close()
 
-            var inputLine = inStream.readLine()
-            var data = "";
+                val prompts = mutableListOf<Prompt>()
 
-            while (inputLine != null) {
-                data += inputLine;
-                inputLine = inStream.readLine();
-            }
-            inStream.close()
-
-            val prompts = mutableListOf<Prompt>()
-
-            /*array way
+                /*array way
             val jRecords= JSONObject(data).get("record") as JSONArray;
             println("RECORD");
             println(jRecords.toString())
@@ -83,44 +81,60 @@ fun getAllPrompts(): MutableList<Prompt>? {
             }
             */
 
-            val jRecord = JSONObject(data).get("record") as JSONObject;
-            var i = 1;
-            while (true) {
-                if (!jRecord.has(i.toString()))
-                    break;
+                val jRecord = JSONObject(data).get("record") as JSONObject;
+                var i = 1;
+                while (true) {
+                    if (!jRecord.has(i.toString()))
+                        break;
 
-                val jPrompt = jRecord.get(i.toString()) as JSONObject
+                    val jPrompt = jRecord.get(i.toString()) as JSONObject
 
-                //Prompt for the player
-                val promptText = jPrompt.get("PromptText").toString()
+                    //Prompt for the player
+                    val promptText = jPrompt.get("PromptText").toString()
 
-                //Prompt id
-                val id = jPrompt.get("id").toString().toInt()
+                    //Prompt id
+                    val id = jPrompt.get("id").toString().toInt()
 
-                //Left Information
-                val leftOption = jPrompt.get("LeftOption").toString()
-                val leftMoney  = jPrompt.get("LeftMoney").toString().toInt()
-                val leftEnergy = jPrompt.get("LeftEnergy").toString().toInt()
-                val leftStatus = jPrompt.get("LeftStatus").toString().toInt()
-                val nextLeft   = jPrompt.get("NextLeft").toString().toInt()
+                    //Left Information
+                    val leftOption = jPrompt.get("LeftOption").toString()
+                    val leftMoney = jPrompt.get("LeftMoney").toString().toInt()
+                    val leftEnergy = jPrompt.get("LeftEnergy").toString().toInt()
+                    val leftStatus = jPrompt.get("LeftStatus").toString().toInt()
+                    val nextLeft = jPrompt.get("NextLeft").toString().toInt()
 
-                //Right Information
-                val rightOption = jPrompt.get("RightOption").toString()
-                val rightMoney  = jPrompt.get("RightMoney").toString().toInt()
-                val rightEnergy = jPrompt.get("RightEnergy").toString().toInt()
-                val rightStatus = jPrompt.get("RightStatus").toString().toInt()
-                val nextRight   = jPrompt.get("NextRight").toString().toInt()
+                    //Right Information
+                    val rightOption = jPrompt.get("RightOption").toString()
+                    val rightMoney = jPrompt.get("RightMoney").toString().toInt()
+                    val rightEnergy = jPrompt.get("RightEnergy").toString().toInt()
+                    val rightStatus = jPrompt.get("RightStatus").toString().toInt()
+                    val nextRight = jPrompt.get("NextRight").toString().toInt()
 
-                //println(" $promptText $leftOption $leftEnergy $leftMoney $leftStatus $rightOption $rightEnergy $rightMoney $rightStatus $nextLeft $nextRight $id")
-                prompts.add(Prompt(promptText, leftOption, leftEnergy, leftMoney, leftStatus, rightOption, rightEnergy, rightMoney, rightStatus, nextLeft, nextRight, id))
-                i++
+                    //println(" $promptText $leftOption $leftEnergy $leftMoney $leftStatus $rightOption $rightEnergy $rightMoney $rightStatus $nextLeft $nextRight $id")
+                    prompts.add(
+                        Prompt(
+                            promptText,
+                            leftOption,
+                            leftEnergy,
+                            leftMoney,
+                            leftStatus,
+                            rightOption,
+                            rightEnergy,
+                            rightMoney,
+                            rightStatus,
+                            nextLeft,
+                            nextRight,
+                            id
+                        )
+                    )
+                    i++
+                }
+                queue.add(prompts)
+            } catch (e: Exception) {
+                queue.add(null)
             }
-            queue.add(prompts)
-        }catch(e:Exception){
-            queue.add(null)
         }
+        return queue.take();
     }
-    return queue.take();
 }
 
 
