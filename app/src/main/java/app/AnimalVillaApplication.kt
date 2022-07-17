@@ -5,6 +5,7 @@ import app.AnimalVilla.BuildConfig
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.GlobalContext
+import org.koin.core.logger.Level
 
 class AnimalVillaApplication : Application() {
 
@@ -12,7 +13,7 @@ class AnimalVillaApplication : Application() {
         super.onCreate()
 
         GlobalContext.startKoin {
-            androidLogger(if (BuildConfig.DEBUG)org.koin.core.logger.Level.ERROR else org.koin.core.logger.Level.NONE)
+            androidLogger(if (BuildConfig.DEBUG) Level.ERROR else Level.NONE)
             androidContext(this@AnimalVillaApplication)
             modules(appModule)
         }

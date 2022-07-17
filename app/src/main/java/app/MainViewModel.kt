@@ -1,11 +1,13 @@
 package app
 
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import app.Service.IPromptService
 import app.Service.PromptService
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreSettings
 import com.google.firebase.storage.FirebaseStorage
+import kotlinx.coroutines.launch
 
 class MainViewModel (var promptService : IPromptService) : ViewModel(){
 
@@ -22,6 +24,11 @@ class MainViewModel (var promptService : IPromptService) : ViewModel(){
 
     //Fetch Prompts
     //Get prompt from array list and present it to the user
+    fun fetchPrompts()  {
+        viewModelScope.launch   {
+            promptService.fetchPrompts();
+        }
+    }
     //ADD FUNCTION HEREEREERE
 
     //Left Button
