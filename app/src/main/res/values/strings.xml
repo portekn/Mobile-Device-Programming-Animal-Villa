@@ -5,7 +5,8 @@
     <string name="animal_villa">Animal Villa</string>
     <string name="stuff" />
     <string name="leftOption" />
-    <string name="rightOption" /><![CDATA[
+    <string name="rightOption" />
+    <string name="text_on_click" /><![CDATA[
     >
 ]]>
 </resources>
