@@ -3,7 +3,9 @@
     <string name="button">Button</string>
     <string name="start">Start</string>
     <string name="animal_villa">Animal Villa</string>
-    <string name="stuff" /><![CDATA[
+    <string name="stuff" />
+    <string name="leftOption" />
+    <string name="rightOption" /><![CDATA[
     >
 ]]>
 </resources>

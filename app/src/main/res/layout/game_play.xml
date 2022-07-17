@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GamePlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/promptBox"
+        android:layout_width="556dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="60dp"
+        android:text="@string/stuff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <Button
+        android:id="@+id/leftButton"
+        android:layout_width="225dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="116dp"
+        android:text="@string/leftOption"
+        app:layout_constraintEnd_toStartOf="@+id/rightButton"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/promptBox"
+        tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/rightButton"
+        android:layout_width="223dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/rightOption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/promptBox"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
