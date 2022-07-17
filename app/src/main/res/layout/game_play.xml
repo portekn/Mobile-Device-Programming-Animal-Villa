@@ -10,8 +10,8 @@
 
     <TextView
         android:id="@+id/promptBox"
-        android:layout_width="563dp"
-        android:layout_height="100dp"
+        android:layout_width="556dp"
+        android:layout_height="101dp"
         android:layout_marginStart="60dp"
         android:text="@string/stuff"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,10 +23,10 @@
         android:id="@+id/leftButton"
         android:layout_width="225dp"
         android:layout_height="62dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="116dp"
         android:text="@string/leftOption"
         app:layout_constraintEnd_toStartOf="@+id/rightButton"
-        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintHorizontal_bias="0.245"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/promptBox"
         tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
@@ -35,11 +35,10 @@
         android:id="@+id/rightButton"
         android:layout_width="223dp"
         android:layout_height="65dp"
-        android:layout_marginEnd="116dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="64dp"
         android:text="@string/rightOption"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.93"
+        app:layout_constraintTop_toBottomOf="@+id/promptBox"
         tools:ignore="SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
