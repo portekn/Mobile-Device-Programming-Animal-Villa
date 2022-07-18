@@ -5,5 +5,4 @@ data class Player(
     var Money: Int,  //How much money the player has
     var Status: Int, //The players status
     var Day: Int     //Which day the player is on
-) {
-}
+)

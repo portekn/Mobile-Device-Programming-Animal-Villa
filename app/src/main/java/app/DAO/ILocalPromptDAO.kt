@@ -3,8 +3,10 @@ package app.DAO
 import androidx.lifecycle.LiveData
 import androidx.room.*
 import app.DTO.Prompt
-import java.util.ArrayList
+import retrofit2.Call
+import kotlin.collections.ArrayList
 
+/*
 @Dao
 interface ILocalPromptDAO {
 
@@ -12,7 +14,10 @@ interface ILocalPromptDAO {
     fun getPrompts(): LiveData<List<Prompt>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertAll(prompts: ArrayList<Prompt>)
+    fun insertAll(prompts: Call<ArrayList<Prompt>>?)
+    abstract fun save(prompt: Prompt)
 
 
 }
+
+ */
