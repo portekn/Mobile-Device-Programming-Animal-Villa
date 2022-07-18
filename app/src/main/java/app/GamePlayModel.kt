@@ -1,54 +1,71 @@
 package app
 
-import android.content.Intent
 import android.os.Bundle
 import android.os.StrictMode
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
-import androidx.activity.ComponentActivity
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import app.AnimalVilla.R
 import app.DTO.Prompt
 import org.json.JSONObject
-import org.w3c.dom.Text
 import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.net.URL
 import java.util.concurrent.LinkedBlockingQueue
-import java.util.zip.Inflater
 import kotlin.concurrent.thread
 
 class GamePlayModel: AppCompatActivity() {
 
     //Variables
+    private var array:ArrayList<String> = arrayListOf() //Holds a list of array items for variables above. Will be used to add values to variables above
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        //Hides Action and Status bars
         supportActionBar?.hide()
         hideSystemBars()
+
+        //Lets the game run
         super.onCreate(savedInstanceState)
         setContentView(R.layout.game_play)
 
-        val queue = getAllPrompts()
-        //println( queue?.get(2).toString())
-        //DO STUFF HERE
+        //Gets the first prompt
+        organizeCurrentPrompt("0", array)
 
-
+        //Displays first prompt
         val textView = findViewById<TextView>(R.id.promptBox)
-        //textView.setOnClickListener{ Toast.makeText(this@GamePlayModel,
-        //   R.string.text_on_click, Toast.LENGTH_LONG).show() }
-        textView.text = queue?.get(2).toString()
+        textView.text = array[0]
 
+        //Label the buttons
+        val leftButtonTextView = findViewById<Button>(R.id.leftButton)
+        val rightButtonTextView = findViewById<Button>(R.id.rightButton)
+        leftButtonTextView.text = array[4]
+        rightButtonTextView.text = array[5]
+
+        //Do this when left button is pressed
+        val leftButton = findViewById<Button>(R.id.leftButton)
+        leftButton.setOnClickListener {
+            //left button does things here
+            organizeCurrentPrompt(array[1], array)
+            textView.text = array[0]
+            leftButtonTextView.text = array[4]
+            rightButtonTextView.text = array[5]
+        }
+
+        //DO this when right button is pressed
+        val rightButton = findViewById<Button>(R.id.rightButton)
+        rightButton.setOnClickListener {
+            //right button does things here
+            organizeCurrentPrompt(array[2], array)
+            textView.text = array[0]
+            leftButtonTextView.text = array[4]
+            rightButtonTextView.text = array[5]
+        }
     }
 
     //Hides the system bars when app is running
-    //Need to put somewhere else
     private fun hideSystemBars() {
         val windowInsetsController =
             WindowCompat.getInsetsController(window, findViewById(R.id.GamePlay))
@@ -57,9 +74,9 @@ class GamePlayModel: AppCompatActivity() {
         windowInsetsController.hide(WindowInsetsCompat.Type.systemBars())
     }
 }
-
-private fun getAllPrompts(): MutableList<Prompt>? {
-    val queue = LinkedBlockingQueue<MutableList<Prompt>?>()
+//Collects all prompts for use
+private fun getAllPrompts(): MutableList<Prompt> {
+    val queue = LinkedBlockingQueue<MutableList<Prompt>>()
     thread {
         try {
             StrictMode.setThreadPolicy(
@@ -69,46 +86,20 @@ private fun getAllPrompts(): MutableList<Prompt>? {
             val inStream = BufferedReader(InputStreamReader(yahoo.openStream()))
 
             var inputLine = inStream.readLine()
-            var data = "";
+            var data = ""
 
             while (inputLine != null) {
-                data += inputLine;
-                inputLine = inStream.readLine();
+                data += inputLine
+                inputLine = inStream.readLine()
             }
             inStream.close()
 
             val prompts = mutableListOf<Prompt>()
-
-            /*array way
-        val jRecords= JSONObject(data).get("record") as JSONArray;
-        println("RECORD");
-        println(jRecords.toString())
-        for (i in 0 until jRecords.length()){
-            val jPrompt=jRecords.get(i) as JSONObject
-            //println(jPrompt)
-            val promptText=jPrompt.get("PromptText").toString()
-            val energy=jPrompt.get("Energy").toString().toInt()
-            val money=jPrompt.get("Money").toString().toInt()
-            val status=jPrompt.get("Status").toString().toInt()
-            val left=jPrompt.get("Left").toString().toInt()
-            val right=jPrompt.get("Right").toString().toInt()
-            println("{" +
-                    "\n promptText: "+promptText +
-                    "\n energy: "+energy +
-                    "\n money: "+money +
-                    "\n status: "+status +
-                    "\n left: "+left +
-                    "\n right: "+right +
-                    "\n}")
-            prompts.add(Prompt(promptText,energy,money,status,left,right))
-        }
-        */
-
-            val jRecord = JSONObject(data).get("record") as JSONObject;
-            var i = 1;
+            val jRecord = JSONObject(data).get("record") as JSONObject
+            var i = 1
             while (true) {
                 if (!jRecord.has(i.toString()))
-                    break;
+                    break
 
                 val jPrompt = jRecord.get(i.toString()) as JSONObject
 
@@ -134,19 +125,7 @@ private fun getAllPrompts(): MutableList<Prompt>? {
 
                 //println(" $promptText $leftOption $leftEnergy $leftMoney $leftStatus $rightOption $rightEnergy $rightMoney $rightStatus $nextLeft $nextRight $id")
                 prompts.add(
-                    Prompt(
-                        promptText,
-                        leftOption,
-                        leftEnergy,
-                        leftMoney,
-                        leftStatus,
-                        rightOption,
-                        rightEnergy,
-                        rightMoney,
-                        rightStatus,
-                        nextLeft,
-                        nextRight,
-                        id
+                    Prompt(promptText, leftOption, leftEnergy, leftMoney, leftStatus, rightOption, rightEnergy, rightMoney, rightStatus, nextLeft, nextRight, id
                     )
                 )
                 i++
@@ -156,5 +135,28 @@ private fun getAllPrompts(): MutableList<Prompt>? {
             queue.add(null)
         }
     }
-    return queue.take();
+    return queue.take()
 }
+
+//Collects needed prompt for use
+private fun organizeCurrentPrompt(fetch: String, array: ArrayList<String>): ArrayList<String> {
+
+    //Assign values to prompts
+    val queue = getAllPrompts()
+
+    array.add(0,queue[fetch.toInt()].PromptText)
+    array.add(1,queue[fetch.toInt()].NextLeft.toString())
+    array.add(2,queue[fetch.toInt()].NextRight.toString())
+    array.add(3,queue[fetch.toInt()].id.toString())
+    array.add(4,queue[fetch.toInt()].LeftOption)
+    array.add(5,queue[fetch.toInt()].RightOption)
+    array.add(6,queue[fetch.toInt()].LeftEnergy.toString())
+    array.add(7,queue[fetch.toInt()].RightEnergy.toString())
+    array.add(8,queue[fetch.toInt()].LeftMoney.toString())
+    array.add(9,queue[fetch.toInt()].RightMoney.toString())
+    array.add(10,queue[fetch.toInt()].LeftStatus.toString())
+    array.add(11,queue[fetch.toInt()].RightStatus.toString())
+
+    //Return array for use
+    return array
+    }
