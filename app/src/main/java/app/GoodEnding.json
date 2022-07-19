@@ -1,0 +1,58 @@
+{
+  "1": {
+    "PromptText": "This past week has been amazing! All your hard work has paid off. You have made so many new friends here in Animal Villa.",
+    "LeftOption": "Continue",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Continue",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 2,
+    "NextRight": 2,
+    "id": 1
+  },
+  "2": {
+    "PromptText": "You have impacted everyone’s lives for the better. Who knew that a fresh face was exactly what this village needed?",
+    "LeftOption": "Continue",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Continue",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 3,
+    "NextRight": 3,
+    "id": 2
+  },
+  "3": {
+    "PromptText": "Everyone has made it like you have lived here your entire life. You are a part of the family! Moving to Animal Villa was just what you needed.",
+    "LeftOption": "Continue",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Continue",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 4,
+    "NextRight": 4,
+    "id": 3
+  },
+  "4": {
+    "PromptText": "Good ending achieved.",
+    "LeftOption": "Back to Start",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Back to Start",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 0,
+    "NextRight": 0,
+    "id": 4
+  }
+}
