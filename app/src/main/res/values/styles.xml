@@ -1,0 +1,18 @@
+<resources>
+    <!-- values-v29/themes.xml -->
+    <style name="AnimalVillaTheme">
+        <item name="android:navigationBarColor">
+            @android:color/transparent
+        </item>
+
+        <!-- Optional: set to transparent if your app is drawing behind the status bar. -->
+        <item name="android:statusBarColor">
+            @android:color/transparent
+        </item>
+
+        <!-- Optional: set the status bar light and content dark. -->
+        <item name="android:windowLightStatusBar">
+            true
+        </item>
+    </style>
+</resources>
