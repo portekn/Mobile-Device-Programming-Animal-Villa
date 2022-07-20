@@ -1,0 +1,87 @@
+{
+  "1":{
+    "PromptText": "Suspicion has been raised following your arrival in Animal Villa. You hear what sounds like angry cries in the distance.",
+    "LeftOption": "Continue",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Continue",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 2,
+    "NextRight": 2,
+    "id": 1
+  },
+  "2": {
+    "PromptText": "Soon you hear a bang on your front door. The innocent people of Animal Villa flood your home and drag you out into the main square.",
+    "LeftOption": "Continue",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Continue",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 3,
+    "NextRight": 3,
+    "id": 2
+  },
+  "3": {
+    "PromptText": " You hear some of the animals’ whisper about witches and demons while you are tied to a wooden pole. ",
+    "LeftOption": "Continue",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Continue",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 4,
+    "NextRight": 4,
+    "id": 3
+  },
+  "4": {
+    "PromptText": "The mayor addresses the crowd, “Tonight, we end the rumors! Let us end this witch and send them back to the devil they spawned from. For the protection of our children, our town, our lives! Burn the witch!”",
+    "LeftOption": "Continue",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Continue",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 5,
+    "NextRight": 5,
+    "id": 4
+  },
+  "5": {
+    "PromptText": "The animals begin to chant as a torch is thrown into the kindling below your feet. You are soon engulfed in the flames, and everything fades to black…",
+    "LeftOption": "Continue",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Continue",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 6,
+    "NextRight": 6,
+    "id": 5
+  },
+  "6": {
+    "PromptText": "Bad ending achieved.",
+    "LeftOption": "Back to Start",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Back to Start",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 0,
+    "NextRight": 0,
+    "id": 6
+  }
+
+}
