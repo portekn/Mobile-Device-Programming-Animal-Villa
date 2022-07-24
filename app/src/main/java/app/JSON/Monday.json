@@ -11,6 +11,7 @@
     "RightStatus": 0,
     "NextLeft": 2,
     "NextRight": 2,
+    "EndDay": "false",
     "id": 1
   },
   "2": {
@@ -25,6 +26,7 @@
     "RightStatus": -5,
     "NextLeft": 3,
     "NextRight": 6,
+    "EndDay": "false",
     "id": 2
   },
   "3": {
@@ -39,6 +41,7 @@
     "RightStatus": 0,
     "NextLeft": 4,
     "NextRight": 4,
+    "EndDay": "false",
     "id": 3
   },
   "4": {
@@ -53,6 +56,7 @@
     "RightStatus": 0,
     "NextLeft": 5,
     "NextRight": 5,
+    "EndDay": "false",
     "id": 4
   },
   "5": {
@@ -67,6 +71,7 @@
     "RightStatus": 5,
     "NextLeft": 6,
     "NextRight": 6,
+    "EndDay": "false",
     "id": 5
   },
     "6": {
@@ -79,8 +84,9 @@
       "RightEnergy": -5,
       "RightMoney": 0,
       "RightStatus": 0,
-      "NextLeft": 0,
+      "NextLeft": 13,
       "NextRight": 14,
+      "EndDay": "false",
       "id": 6
     },
     "7": {
@@ -95,6 +101,7 @@
       "RightStatus": 0,
       "NextLeft": 14,
       "NextRight": 7,
+      "EndDay": "false",
       "id": 7
     },
     "8": {
@@ -109,6 +116,7 @@
       "RightStatus": 0,
       "NextLeft": 9,
       "NextRight": 9,
+      "EndDay": "false",
       "id": 8
     },
     "9": {
@@ -123,6 +131,7 @@
       "RightStatus": -15,
       "NextLeft": 10,
       "NextRight": 12,
+      "EndDay": "false",
       "id": 9
     },
     "10": {
@@ -137,6 +146,7 @@
       "RightStatus": 0,
       "NextLeft": 11,
       "NextRight": 11,
+      "EndDay": "false",
       "id": 10
     },
     "11": {
@@ -149,8 +159,9 @@
       "RightEnergy": -5,
       "RightMoney": 0,
       "RightStatus": 0,
-      "NextLeft": 0,
+      "NextLeft": 13,
       "NextRight": 14,
+      "EndDay": "false",
       "id": 11
     },
     "12": {
@@ -165,20 +176,22 @@
       "RightStatus": 0,
       "NextLeft": 0,
       "NextRight": 0,
+      "EndDay": "true",
       "id": 12
     },
   "13": {
-    "PromptText": "You spend your day unpacking the rest of your items. This house is really starting to feel like a home now. There are a few hours left in the day. Should you spend the night at home, or check out the nightlife of the village?",
-    "LeftOption": "Stay in for the night",
+    "PromptText": "You believe your day was spent productively! It's time to rest up for another eventful day!",
+    "LeftOption": "Continue to next day",
     "LeftEnergy": 0,
     "LeftMoney": 0,
     "LeftStatus": 0,
-    "RightOption": "Let's check out the village at night! ",
+    "RightOption": "Continue to next day",
     "RightEnergy": -5,
     "RightMoney": 0,
     "RightStatus": 0,
     "NextLeft": 0,
-    "NextRight": 14,
+    "NextRight": 0,
+    "EndDay": "true",
     "id": 13
   },
   "14": {
@@ -193,6 +206,7 @@
       "RightStatus": 0,
       "NextLeft": 0,
       "NextRight": 0,
+      "EndDay": "true",
       "id": 14
     }
 
