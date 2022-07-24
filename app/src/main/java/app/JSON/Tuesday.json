@@ -11,6 +11,7 @@
     "RightStatus": 0,
     "NextLeft": 2,
     "NextRight": 2,
+    "EndDay": "false",
     "id": 1
   },
   "2": {
@@ -25,6 +26,7 @@
     "RightStatus": 0,
     "NextLeft": 3,
     "NextRight": 3,
+    "EndDay": "false",
     "id": 2
   },
   "3": {
@@ -38,7 +40,38 @@
     "RightMoney": 0,
     "RightStatus": 0,
     "NextLeft": 4,
-    "NextRight": 5,
+    "NextRight": 0,
+    "EndDay": "false",
     "id": 3
+  },
+  "4": {
+    "PromptText": "You've decided to check in on the Crow family! This fairly large family runs the local church of the village.",
+    "LeftOption": "Continue.",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Continue.",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 5,
+    "NextRight": 5,
+    "EndDay": "false",
+    "id": 4
+  },
+  "5": {
+    "PromptText": "Walking up to the doors of the family home, you knock against the oak door. It takes some time, but a small crow in a simple dress opened the door. You recognized the crow in the doorway. It was Elizabeth, the daughter of the family.",
+    "LeftOption": "Continue.",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Continue.",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 6,
+    "NextRight": 6,
+    "EndDay": "false",
+    "id": 5
   }
 }
