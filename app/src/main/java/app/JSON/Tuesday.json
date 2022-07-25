@@ -73,5 +73,20 @@
     "NextRight": 6,
     "EndDay": "false",
     "id": 5
+  },
+  "6": {
+    "PromptText": "“Oh! What a wonderful day we've been blessed with, right neighbor? What brings you around to our lovely home?“",
+    "LeftOption": "I wanted to come by and say hi!",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "I was walking around the neighborhood and thought to stop on by to say hello",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 5,
+    "NextLeft": 7,
+    "NextRight": 7,
+    "EndDay": "false",
+    "id": 6
   }
 }
