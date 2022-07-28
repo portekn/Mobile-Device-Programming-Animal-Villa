@@ -1,17 +1,8 @@
 package app.Service
 
-import android.app.Application
-import android.content.ContentValues.TAG
-import android.util.Log
-import androidx.room.Room
 //import app.DAO.ILocalPromptDAO
 //import app.DAO.IPromptDAO
 //import app.DAO.PromptDatabase
-import app.DTO.Prompt
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.async
-import kotlinx.coroutines.withContext
-import retrofit2.Call
 
 /*
 class PromptService(application: Application){

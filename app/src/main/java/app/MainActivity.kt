@@ -1,43 +1,55 @@
 package app
 
 import android.content.Intent
-import android.os.Bundle
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.*
+import android.os.Bundle
+import android.view.View
 import app.AnimalVilla.R
+
+//import app.DTO.Specimen
+//import app.DTO.foo
+
 //import com.google.firebase.auth.FirebaseUser
 //import com.google.firebase.firestore.FirebaseFirestore
 
 open class MainActivity : AppCompatActivity() {
 
     //Variables
+    //val appMethods = AppMethods()
 
     //Firebase
     //private var firebaseUser: FirebaseUser? = null
     //private latent var firestore: FirebaseFirestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        supportActionBar?.hide()
-        hideSystemBars()
+        //appMethods.hideSystemBars(supportActionBar,window,findViewById(R.id.TitleScreen))
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+/*
+        var length = foo?.let{
+
+            it.toString()
+
+        } ?: -1
+*/
+
+
         //Press the start button to start the game
-        val startButton = findViewById<Button>(R.id.StartButton)
-        startButton.setOnClickListener {
-            val int = Intent(this, GamePlayModel::class.java)
-            startActivity(int)
-        }
+        //val startButton = findViewById<Button>(R.id.StartButton)
+        //startButton.setOnClickListener {
+        //    val int = Intent(this, GamePlayModel::class.java)
+        //    startActivity(int)
+        //}
     }
 
-    //Hides the system bars when app is running
-    private fun hideSystemBars() {
-        val windowInsetsController =
-            WindowCompat.getInsetsController(window, findViewById(R.id.TitleScreen))
-        windowInsetsController.systemBarsBehavior =
-            WindowInsetsControllerCompat.BEHAVIOR_SHOW_BARS_BY_SWIPE
-        windowInsetsController.hide(WindowInsetsCompat.Type.systemBars())
-        }
+    fun gotoLogin(view: View) {
+        startActivity(Intent(this, LoginActivity::class.java))
     }
+
+    fun gotoReg(view: View) {
+        startActivity(Intent(this, RegistrationActivity::class.java))
+    }
+}
 

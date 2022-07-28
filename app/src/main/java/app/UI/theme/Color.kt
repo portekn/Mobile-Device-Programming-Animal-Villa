@@ -1,3 +1,5 @@
+@file:Suppress("unused", "unused", "unused", "unused", "unused")
+
 package app.UI.theme
 
 import androidx.compose.ui.graphics.Color
