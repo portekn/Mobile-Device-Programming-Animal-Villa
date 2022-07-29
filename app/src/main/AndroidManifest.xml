@@ -4,6 +4,7 @@
     package="app.AnimalVilla">
 
     <application
+        android:name="app.AnimalVillaApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AnimalVilla"
-        tools:targetApi="31">
+        >
         <activity
             android:name="app.LoginActivity"
             android:exported="false" />
@@ -33,5 +34,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

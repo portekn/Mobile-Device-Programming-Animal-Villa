@@ -1,7 +1,3 @@
-@file:Suppress("unused", "unused", "unused", "unused", "unused", "unused", "unused", "unused",
-    "unused", "unused"
-)
-
 package app
 
 import android.view.View
@@ -13,7 +9,7 @@ import androidx.core.view.WindowInsetsControllerCompat
 
 class AppMethods {
     //Hides the system bars when app is running
-    fun hideSystemBars(supportActionBar: ActionBar?, window: Window, findViewById: Any) {
+    fun hideSystemBars(supportActionBar: android.app.ActionBar?, window: Window, findViewById: Any) {
         supportActionBar?.hide()
         val windowInsetsController =
             WindowCompat.getInsetsController(window, findViewById as View)

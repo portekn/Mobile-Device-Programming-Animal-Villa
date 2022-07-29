@@ -1,5 +1,3 @@
-@file:Suppress("CanBeVal", "CanBeVal", "CanBeVal", "CanBeVal")
-
 package app
 
 import android.content.Intent
@@ -9,7 +7,10 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import app.AnimalVilla.R
+import app.DTO.Player
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class LoginActivity : AppCompatActivity() {
 

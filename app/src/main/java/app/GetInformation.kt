@@ -1,5 +1,3 @@
-@file:Suppress("unused", "unused", "unused", "unused")
-
 package app
 
 import android.os.StrictMode
@@ -31,7 +29,6 @@ class GetInformation {
         if(NextDay){
             this.i = i+1
         }
-
         println(i)
     }
 

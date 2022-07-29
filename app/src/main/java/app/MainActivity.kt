@@ -1,10 +1,18 @@
 package app
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.compose.ui.Modifier.Companion.any
 import app.AnimalVilla.R
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import org.koin.android.ext.koin.androidContext
+import org.koin.android.ext.koin.androidLogger
+import org.koin.androidx.viewmodel.ext.android.viewModel
+import org.koin.core.context.GlobalContext.startKoin
 
 //import app.DTO.Specimen
 //import app.DTO.foo
@@ -15,33 +23,12 @@ import app.AnimalVilla.R
 open class MainActivity : AppCompatActivity() {
 
     //Variables
-    //val appMethods = AppMethods()
-
-    //Firebase
-    //private var firebaseUser: FirebaseUser? = null
-    //private latent var firestore: FirebaseFirestore
+    private val appMethods = AppMethods()
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        //appMethods.hideSystemBars(supportActionBar,window,findViewById(R.id.TitleScreen))
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
-/*
-        var length = foo?.let{
-
-            it.toString()
-
-        } ?: -1
-*/
-
-
-        //Press the start button to start the game
-        //val startButton = findViewById<Button>(R.id.StartButton)
-        //startButton.setOnClickListener {
-        //    val int = Intent(this, GamePlayModel::class.java)
-        //    startActivity(int)
-        //}
+        appMethods.hideSystemBars(actionBar,window, findViewById(R.id.TitleScreen))
     }
 
     fun gotoLogin(view: View) {
