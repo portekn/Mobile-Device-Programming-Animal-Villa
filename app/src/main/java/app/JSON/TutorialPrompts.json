@@ -24,7 +24,7 @@
     "RightEnergy": 0,
     "RightMoney": 0,
     "RightStatus": 0,
-    "NextLeft": 0,
+    "NextLeft": 11,
     "NextRight": 4,
     "id": 2,
     "NextDay": false
@@ -40,7 +40,7 @@
     "RightMoney": 0,
     "RightStatus": 0,
     "NextLeft": 1,
-    "NextRight": 13,
+    "NextRight": 11,
     "id": 3,
     "NextDay": false
   },
@@ -99,8 +99,8 @@
     "RightEnergy": 0,
     "RightMoney": 0,
     "RightStatus": 0,
-    "NextLeft": 0,
-    "NextRight": 0,
+    "NextLeft": 11,
+    "NextRight": 8,
     "id": 7,
     "NextDay": false
   },
@@ -159,10 +159,25 @@
   "RightEnergy": 0,
   "RightMoney": 0,
   "RightStatus": 0,
-  "NextLeft": 4,
-  "NextRight": 0,
+  "NextLeft": 11,
+  "NextRight": 11,
   "id": 11,
     "NextDay": true
-}
+},
+  "12": {
+    "PromptText": "",
+    "LeftOption": "",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 0,
+    "NextRight": 0,
+    "id": 12,
+    "NextDay": false
+  }
 }
 

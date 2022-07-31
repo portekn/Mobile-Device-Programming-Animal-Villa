@@ -8,10 +8,7 @@ import com.google.firebase.storage.FirebaseStorage
 
 class MainViewModel : ViewModel(){
 
-    //Variables
-    var player : Player? = null
     private var firestore : FirebaseFirestore = FirebaseFirestore.getInstance()
-    private var storageReference = FirebaseStorage.getInstance().reference
 
 
     init {

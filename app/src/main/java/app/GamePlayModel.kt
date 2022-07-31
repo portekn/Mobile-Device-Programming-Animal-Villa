@@ -1,6 +1,7 @@
 package app
 
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -24,41 +25,67 @@ class GamePlayModel: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.game_play)
 
+        val textView: TextView = findViewById(R.id.promptBox)
+        val nextDayButton: Button = findViewById(R.id.nextDayButton)
+        val rightButton: Button = findViewById(R.id.rightButton)
+        val leftButton: Button = findViewById(R.id.leftButton)
+
         //Gets the first prompt
-       getInformation.organizeCurrentPrompt("0", array)
+        getInformation.organizeCurrentPrompt("0", array)
 
         //Checks what day the game is on
-        getInformation.checkDay(array[12].toBoolean())
+        checkDay(array[12].toBoolean(), leftButton, rightButton, nextDayButton)
 
         //Displays first prompt
-        val textView = findViewById<TextView>(R.id.promptBox)
         textView.text = array[0]
 
         //Label the buttons
         val leftButtonTextView = findViewById<Button>(R.id.leftButton)
         val rightButtonTextView = findViewById<Button>(R.id.rightButton)
+        val nextDayButtonTextView = findViewById<Button>(R.id.nextDayButton)
         leftButtonTextView.text = array[4]
         rightButtonTextView.text = array[5]
+        nextDayButtonTextView.text = "Go to next Day"
 
         //Do this when left button is pressed
-        val leftButton = findViewById<Button>(R.id.leftButton)
         leftButton.setOnClickListener {
             //left button does things here
-            getInformation.organizeCurrentPrompt(array[1], array)
-            textView.text = array[0]
-            leftButtonTextView.text = array[4]
-            rightButtonTextView.text = array[5]
+            changeButtonsAndText(
+                array,
+                textView,
+                leftButtonTextView,
+                rightButtonTextView,
+                nextDayButtonTextView
+            )
         }
 
-        //DO this when right button is pressed
-        val rightButton = findViewById<Button>(R.id.rightButton)
+        //Do this when right button is pressed
         rightButton.setOnClickListener {
             //right button does things here
-            getInformation.organizeCurrentPrompt(array[2], array)
-            textView.text = array[0]
-            leftButtonTextView.text = array[4]
-            rightButtonTextView.text = array[5]
+            changeButtonsAndText(
+                array,
+                textView,
+                leftButtonTextView,
+                rightButtonTextView,
+                nextDayButtonTextView
+            )
+            checkDay(array[12].toBoolean(), leftButton, rightButton, nextDayButton)
         }
+
+        //Do this when next day button is pressed
+        nextDayButton.setOnClickListener{
+            //next day button does things here
+            changeButtonsAndText(
+                array,
+                textView,
+                leftButtonTextView,
+                rightButtonTextView,
+                nextDayButtonTextView
+            )
+            checkDay(array[12].toBoolean(), leftButton, rightButton, nextDayButton)
+
+        }
+
     }
 
     //Hides the system bars when app is running
@@ -68,5 +95,43 @@ class GamePlayModel: AppCompatActivity() {
         windowInsetsController.systemBarsBehavior =
             WindowInsetsControllerCompat.BEHAVIOR_SHOW_BARS_BY_SWIPE
         windowInsetsController.hide(WindowInsetsCompat.Type.systemBars())
+    }
+
+
+    fun showButtons(leftButton: Button, rightButton: Button, nextDayButton: Button) {
+        leftButton.visibility = View.VISIBLE
+        rightButton.visibility = View.VISIBLE
+        nextDayButton.visibility = View.GONE
+    }
+
+    fun hideButtons(leftButton: Button, rightButton: Button, nextDayButton: Button) {
+        leftButton.visibility = View.GONE
+        rightButton.visibility = View.GONE
+        nextDayButton.visibility = View.VISIBLE
+    }
+
+    //Get json for correct day
+    private fun checkDay(NextDay: Boolean, leftButton: Button, rightButton: Button, nextDayButton: Button) {
+        if(NextDay){
+            hideButtons(leftButton, rightButton, nextDayButton)
+            getInformation.nextDayCounter()
+        }
+        else{
+            showButtons(leftButton, rightButton, nextDayButton)
+        }
+    }
+
+    private fun changeButtonsAndText(
+        array: ArrayList<String>,
+        textView: TextView,
+        leftButtonTextView: Button,
+        rightButtonTextView: Button,
+        nextDayButtonTextView: Button
+    ) {
+        getInformation.organizeCurrentPrompt(array[2], array)
+        textView.text = array[0]
+        leftButtonTextView.text = array[4]
+        rightButtonTextView.text = array[5]
+        nextDayButtonTextView.text = "Go To Next Day..."
     }
 }

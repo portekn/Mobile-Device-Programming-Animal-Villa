@@ -2,12 +2,12 @@ package app
 
 import android.view.View
 import android.view.Window
-import androidx.appcompat.app.ActionBar
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 
-class AppMethods {
+class AppMethods{
+
     //Hides the system bars when app is running
     fun hideSystemBars(supportActionBar: android.app.ActionBar?, window: Window, findViewById: Any) {
         supportActionBar?.hide()

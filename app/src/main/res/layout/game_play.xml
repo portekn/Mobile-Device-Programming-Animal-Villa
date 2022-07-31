@@ -23,10 +23,10 @@
         android:id="@+id/leftButton"
         android:layout_width="225dp"
         android:layout_height="62dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="112dp"
         android:text="@string/leftOption"
         app:layout_constraintEnd_toStartOf="@+id/rightButton"
-        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintHorizontal_bias="0.263"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/promptBox"
         tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
@@ -41,4 +41,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/promptBox"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/nextDayButton"
+        android:layout_width="184dp"
+        android:layout_height="65dp"
+        android:text="@string/nextday"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rightButton"
+        app:layout_constraintStart_toEndOf="@+id/leftButton"
+        app:layout_constraintTop_toBottomOf="@+id/promptBox"
+        tools:visibility="invisible" />
 </androidx.constraintlayout.widget.ConstraintLayout>

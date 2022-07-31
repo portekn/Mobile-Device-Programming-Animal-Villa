@@ -11,8 +11,9 @@ import kotlin.concurrent.thread
 
 class GetInformation {
 
+
     //Online json sources Days
-    private val tutorial:String = "https://api.jsonbin.io/v3/b/62ca4dbc5d53821c3097eaef/"
+    private val tutorial:String = "https://api.jsonbin.io/v3/b/62e5a90b1c7f436f21181070"
     private val monday:String ="https://api.jsonbin.io/v3/b/62dca97c248d43754f01ac03"
     private val tuesday:String="https://api.jsonbin.io/v3/b/62dca9dc8ebcdb75883e16c5"
     private val wednesday:String=""
@@ -24,16 +25,11 @@ class GetInformation {
     private val infoList = listOf(tutorial,monday,tuesday,wednesday,thursday,friday,saturday,sunday)
     private var i: Int = 0
 
-    //Get json for correct day
-    fun checkDay(NextDay: Boolean) {
-        if(NextDay){
-            this.i = i+1
-        }
-        println(i)
+    //Counts next day
+    fun nextDayCounter(){
+        this.i = i +1
     }
 
-
-    //Get json for correct ending
     //Online json sources Endings
     private val badEnding:String=""
     private val exaustedEnding:String=""

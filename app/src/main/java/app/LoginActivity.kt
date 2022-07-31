@@ -7,10 +7,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import app.AnimalVilla.R
-import app.DTO.Player
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
-import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class LoginActivity : AppCompatActivity() {
 
@@ -25,8 +22,8 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun loginUser(view: View) {
-        var email: String = findViewById<EditText>(R.id.login_email_edit_text).text.toString()
-        var password: String = findViewById<EditText>(R.id.login_password_edit_text).text.toString()
+        val email: String = findViewById<EditText>(R.id.login_email_edit_text).text.toString()
+        val password: String = findViewById<EditText>(R.id.login_password_edit_text).text.toString()
 
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener { task ->
