@@ -1,9 +1,5 @@
 package app.DAO
 
-import app.DTO.Prompt
-import retrofit2.Call
-import retrofit2.http.GET
-
 /*
 interface IPromptDAO {
 

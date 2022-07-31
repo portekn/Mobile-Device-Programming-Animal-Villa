@@ -1,0 +1,44 @@
+{
+  "1": {
+    "PromptText": "Your first day in Animal Villa feels like a success! Today is another shining day!",
+    "LeftOption": "Continue.",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Continue.",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 2,
+    "NextRight": 2,
+    "id": 1
+  },
+  "2": {
+    "PromptText": "Curled up in your comfy bed, sunlight trickles in. The soft warmth touches your face, waking you up for the day.",
+    "LeftOption": "Continue.",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Continue.",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 3,
+    "NextRight": 3,
+    "id": 2
+  },
+  "3": {
+    "PromptText": "Getting up and giving a big stretch, you think about how you want to spend your day. You remember your neighbors and realize that there were two households you have yet to meet. It wouldn't be any harm to check in, would it?",
+    "LeftOption": "Check in on the Fox family.",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Check in on the Crow family.",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 4,
+    "NextRight": 5,
+    "id": 3
+  }
+}

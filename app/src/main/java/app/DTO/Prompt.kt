@@ -16,5 +16,6 @@ data class Prompt(
     var RightStatus: Int,
     var NextLeft: Int,
     var NextRight: Int,
-    @PrimaryKey var id : Int = 0
+    @PrimaryKey var id : Int = 0,
+    var NextDay: Boolean
 )

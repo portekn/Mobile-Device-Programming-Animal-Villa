@@ -6,4 +6,10 @@
     <string name="stuff" />
     <string name="leftOption" />
     <string name="rightOption" />
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="enter_password">Enter password</string>
+    <string name="enter_email">Enter email</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="nextday">nextDay</string>
 </resources>

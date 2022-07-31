@@ -11,7 +11,8 @@
     "RightStatus": 0,
     "NextLeft": 2,
     "NextRight": 3,
-    "id": 1
+    "id": 1,
+    "NextDay": false
   },
   "2": {
     "PromptText": "Have you played Animal Villa before?",
@@ -23,9 +24,10 @@
     "RightEnergy": 0,
     "RightMoney": 0,
     "RightStatus": 0,
-    "NextLeft": 0,
+    "NextLeft": 11,
     "NextRight": 4,
-    "id": 2
+    "id": 2,
+    "NextDay": false
   },
   "3": {
     "PromptText": "What do you not understand?",
@@ -38,8 +40,9 @@
     "RightMoney": 0,
     "RightStatus": 0,
     "NextLeft": 1,
-    "NextRight": 13,
-    "id": 3
+    "NextRight": 11,
+    "id": 3,
+    "NextDay": false
   },
   "4": {
     "PromptText": "You have just moved into a small town, full of all kinds of new neighbors.",
@@ -53,7 +56,8 @@
     "RightStatus": 0,
     "NextLeft": 5,
     "NextRight": 6,
-    "id": 4
+    "id": 4,
+    "NextDay": false
   },
   "5": {
     "PromptText": "You have three resources in Animal Villa, your energy, money, and status.",
@@ -67,7 +71,8 @@
     "RightStatus": 0,
     "NextLeft": 7,
     "NextRight": 8,
-    "id": 5
+    "id": 5,
+    "NextDay": false
   },
   "6": {
     "PromptText": "it is an idyllic little town in the countryside, with cozy cottages and beautiful views - perfect for just starting out on your own.",
@@ -81,7 +86,8 @@
     "RightStatus": 0,
     "NextLeft": 5,
     "NextRight": 5,
-    "id": 6
+    "id": 6,
+    "NextDay": false
   },
   "7": {
     "PromptText": "As you live your life in your new home, you can choose to be known by your kindness, or your chaos. Every decision makes an impact on the town around you.",
@@ -93,9 +99,10 @@
     "RightEnergy": 0,
     "RightMoney": 0,
     "RightStatus": 0,
-    "NextLeft": 0,
-    "NextRight": 0,
-    "id": 7
+    "NextLeft": 11,
+    "NextRight": 8,
+    "id": 7,
+    "NextDay": false
   },
   "8": {
     "PromptText": "There is no winning or losing in Animal Villa, you can make whatever objectives for yourself that you would like.",
@@ -109,7 +116,8 @@
     "RightStatus": 0,
     "NextLeft": 7,
     "NextRight": 11,
-    "id": 8
+    "id": 8,
+    "NextDay": false
   },
   "9": {
     "PromptText": "Are you trying to annoy a game? I am not sentient. Either way, back on track with thee.",
@@ -123,7 +131,8 @@
     "RightStatus": 0,
     "NextLeft": 7,
     "NextRight": 7,
-    "id": 9
+    "id": 9,
+    "NextDay": false
   },
   "10": {
     "PromptText": "Do you want to go over the game mechanics?",
@@ -137,7 +146,8 @@
     "RightStatus": 0,
     "NextLeft": 4,
     "NextRight": 11,
-    "id": 10
+    "id": 10,
+    "NextDay": false
   },
   "11": {
   "PromptText": "Well I guess let me know when you are ready then.",
@@ -149,9 +159,25 @@
   "RightEnergy": 0,
   "RightMoney": 0,
   "RightStatus": 0,
-  "NextLeft": 4,
-  "NextRight": 0,
-  "id": 9
-}
+  "NextLeft": 11,
+  "NextRight": 11,
+  "id": 11,
+    "NextDay": true
+},
+  "12": {
+    "PromptText": "",
+    "LeftOption": "",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 0,
+    "NextRight": 0,
+    "id": 12,
+    "NextDay": false
+  }
 }
 

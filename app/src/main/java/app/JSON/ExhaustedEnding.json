@@ -1,0 +1,58 @@
+{
+  "1": {
+    "PromptText": "You’ve helped your new community, but at what cost? Now you wake up every day with exhaustion in your bones.",
+    "LeftOption": "Continue",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Continue",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 2,
+    "NextRight": 2,
+    "id": 1
+  },
+  "2": {
+    "PromptText": "We know you wanted to make a great impression on your new friends, but you also must think about yourself. It’s okay to tell people no. It’s okay to think about yourself and take care of your own needs.",
+    "LeftOption": "Continue",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Continue",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 3,
+    "NextRight": 3,
+    "id": 2
+  },
+  "3": {
+    "PromptText": "Maybe things will be better next week, but now all you want to do is curl up with a nice book in your cozy home.",
+    "LeftOption": "Continue",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Continue",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 4,
+    "NextRight": 4,
+    "id": 3
+  },
+  "4": {
+    "PromptText": "Exhausted Ending achieved.",
+    "LeftOption": "Back to Start",
+    "LeftEnergy": 0,
+    "LeftMoney": 0,
+    "LeftStatus": 0,
+    "RightOption": "Back to Start",
+    "RightEnergy": 0,
+    "RightMoney": 0,
+    "RightStatus": 0,
+    "NextLeft": 0,
+    "NextRight": 0,
+    "id": 4
+  }
+}

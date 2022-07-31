@@ -1,8 +1,8 @@
 package app.DTO
 
 data class Player(
-    var Energy: Int, //How much energy the player has for the day
-    var Money: Int,  //How much money the player has
-    var Status: Int, //The players status
-    var Day: Int     //Which day the player is on
+    var status: Int = 50,
+    var energy: Int = 50,
+    var money: Int = 50,
+    var uid: String = ""
 )

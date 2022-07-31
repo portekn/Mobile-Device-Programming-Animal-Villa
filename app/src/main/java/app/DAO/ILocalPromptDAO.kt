@@ -1,11 +1,5 @@
 package app.DAO
 
-import androidx.lifecycle.LiveData
-import androidx.room.*
-import app.DTO.Prompt
-import retrofit2.Call
-import kotlin.collections.ArrayList
-
 /*
 @Dao
 interface ILocalPromptDAO {
